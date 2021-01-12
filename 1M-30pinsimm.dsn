@@ -1,399 +1,3941 @@
-(pcb "C:\Users\hegar\OneDrive\KICAD\1M-30pinsimm\1M-30pinsimm.dsn"
+
+(PCB "1M-30pinsimm"
   (parser
     (string_quote ")
     (space_in_quoted_tokens on)
     (host_cad "KiCad's Pcbnew")
     (host_version "(5.1.9)-1")
+    (generated_by_freeroute)
   )
   (resolution um 10)
-  (unit um)
   (structure
+    (boundary
+      (rect pcb 114200.0 -127100.0 203427.0 -110263.0)
+    )
+    (boundary
+      (polygon signal 0
+        116332.0 -127000.0
+        203327.0 -127000.0
+        203327.0 -110363.0
+        114300.0 -110363.0
+        114300.0 -120650.0
+        114589.0 -120671.0
+        114872.0 -120732.0
+        115144.0 -120834.0
+        115399.0 -120973.0
+        115631.0 -121146.0
+        115836.0 -121351.0
+        116009.0 -121583.0
+        116148.0 -121838.0
+        116250.0 -122110.0
+        116311.0 -122393.0
+        116332.0 -122682.0
+      )
+    )
+    (snap_angle 
+      fortyfive_degree
+    )
+    (via "Via[0-3]_800:400_um")
+    (control
+      (via_at_smd off)
+    )
+    (rule
+      (width 250.0)
+      (clear 200.2)
+      (clear 125.0 (type smd_to_turn_gap))
+      (clear 50.0 (type smd_smd))
+    )
     (layer F.Cu
       (type signal)
-      (property
-        (index 0)
-      )
     )
     (layer In1.Cu
       (type power)
-      (property
-        (index 1)
+      (rule
+        (width 250.0)
+        (clear 200.2)
+        (clear 125.0 (type smd_to_turn_gap))
+        (clear 50.0 (type smd_smd))
       )
     )
     (layer In2.Cu
       (type power)
-      (property
-        (index 2)
+      (rule
+        (width 250.0)
+        (clear 200.2)
+        (clear 125.0 (type smd_to_turn_gap))
+        (clear 50.0 (type smd_smd))
       )
     )
     (layer B.Cu
       (type signal)
-      (property
-        (index 3)
+    )
+    (autoroute_settings
+      (fanout off)
+      (autoroute on)
+      (postroute on)
+      (vias on)
+      (via_costs 50)
+      (plane_via_costs 5)
+      (start_ripup_costs 100)
+      (start_pass_no 3231)
+      (layer_rule F.Cu
+        (active on)
+        (preferred_direction horizontal)
+        (preferred_direction_trace_costs 1.0)
+        (against_preferred_direction_trace_costs 6.3)
+      )
+      (layer_rule In1.Cu
+        (active off)
+        (preferred_direction horizontal)
+        (preferred_direction_trace_costs 1.0)
+        (against_preferred_direction_trace_costs 6.3)
+      )
+      (layer_rule In2.Cu
+        (active off)
+        (preferred_direction horizontal)
+        (preferred_direction_trace_costs 1.0)
+        (against_preferred_direction_trace_costs 6.3)
+      )
+      (layer_rule B.Cu
+        (active on)
+        (preferred_direction vertical)
+        (preferred_direction_trace_costs 1.0)
+        (against_preferred_direction_trace_costs 1.2)
       )
     )
-    (boundary
-      (path pcb 0  203327 -127000  116332 -127000  116332 -122682  116311 -122393
-            116250 -122110  116148 -121838  116009 -121583  115836 -121351
-            115631 -121146  115399 -120973  115144 -120834  114872 -120732
-            114589 -120671  114300 -120650  114300 -110363  203327 -110363
-            203327 -127000)
+    (plane GND
+      (polygon In2.Cu 0
+        114300.0 -127000.0
+        203327.0 -127000.0
+        203327.0 -110363.0
+        114300.0 -110363.0
+      )
     )
-    (plane @:no_net_0 (polygon F.Cu 0  203327 -127000  114300 -127000  114300 -110363  203327 -110363
-            203327 -127000))
-    (plane GND (polygon B.Cu 0  203327 -110362  114300 -110362  114300 -126999  203327 -126999
-            203327 -110362))
-    (plane +5V (polygon In1.Cu 0  203327 -127000  114300 -127000  114300 -110363  203327 -110363
-            203327 -127000))
-    (plane GND (polygon In2.Cu 0  203327 -127000  114300 -127000  114300 -110363  203327 -110363
-            203327 -127000))
-    (via "Via[0-3]_800:400_um")
-    (rule
-      (width 250)
-      (clearance 200.1)
-      (clearance 200.1 (type default_smd))
-      (clearance 50 (type smd_smd))
+    (plane +5V
+      (polygon In1.Cu 0
+        114300.0 -127000.0
+        203327.0 -127000.0
+        203327.0 -110363.0
+        114300.0 -110363.0
+      )
     )
   )
   (placement
     (component "Sebs:SOJ-20"
-      (place U3 182880 -116840 front 180 (PN "JEDEC-FPDRAM_Parity"))
+      (place 
+        U3 182880.0 -116840.0 front 180
+        (pin 14 (clearance_class "kicad_default"))
+        (pin 15 (clearance_class "kicad_default"))
+        (pin 16 (clearance_class "kicad_default"))
+        (pin 17 (clearance_class "kicad_default"))
+        (pin 18 (clearance_class "kicad_default"))
+        (pin 22 (clearance_class "kicad_default"))
+        (pin 23 (clearance_class "kicad_default"))
+        (pin 24 (clearance_class "kicad_default"))
+        (pin 25 (clearance_class "kicad_default"))
+        (pin 26 (clearance_class "kicad_default"))
+        (pin 1 (clearance_class "kicad_default"))
+        (pin 2 (clearance_class "kicad_default"))
+        (pin 3 (clearance_class "kicad_default"))
+        (pin 4 (clearance_class "kicad_default"))
+        (pin 5 (clearance_class "kicad_default"))
+        (pin 9 (clearance_class "kicad_default"))
+        (pin 10 (clearance_class "kicad_default"))
+        (pin 11 (clearance_class "kicad_default"))
+        (pin 12 (clearance_class "kicad_default"))
+        (pin 13 (clearance_class "kicad_default"))
+      )
     )
-    (component Capacitors_SMD:C_0805_HandSoldering
-      (place C3 171450 -116840 front 270 (PN CP))
+    (component "Capacitors_SMD:C_0805_HandSoldering"
+      (place 
+        C3 171450.0 -116840.0 front 270
+        (pin 1 (clearance_class "kicad_default"))
+        (pin 2 (clearance_class "kicad_default"))
+      )
     )
-    (component Capacitors_SMD:C_0805_HandSoldering::1
-      (place C2 147320 -116840 front 270 (PN CP))
-      (place C1 123190 -116840 front 270 (PN CP))
+    (component "Capacitors_SMD:C_0805_HandSoldering::1"
+      (place 
+        C2 147320.0 -116840.0 front 270
+        (pin 1 (clearance_class "kicad_default"))
+        (pin 2 (clearance_class "kicad_default"))
+      )
+      (place 
+        C1 123190.0 -116840.0 front 270
+        (pin 1 (clearance_class "kicad_default"))
+        (pin 2 (clearance_class "kicad_default"))
+      )
     )
-    (component Mounting_Holes:MountingHole_3.2mm_M3
-      (place H2 199898 -116840 front 0 (PN MountingHole))
-      (place H1 117729 -116840 front 0 (PN MountingHole))
+    (component "Mounting_Holes:MountingHole_3.2mm_M3"
+      (place 
+        H2 199898.0 -116840.0 front 0
+        (keepout "keepout_1" (clearance_class default))
+        (keepout "keepout_2" (clearance_class default))
+        (keepout "keepout_3" (clearance_class default))
+        (keepout "keepout_4" (clearance_class default))
+      )
+      (place 
+        H1 117729.0 -116840.0 front 0
+        (keepout "keepout_1" (clearance_class default))
+        (keepout "keepout_2" (clearance_class default))
+        (keepout "keepout_3" (clearance_class default))
+        (keepout "keepout_4" (clearance_class default))
+      )
     )
     (component "Sebs:SOJ-20::1"
-      (place U2 158750 -116840 front 180 (PN "JEDEC-FPDRAM"))
-      (place U1 134620 -116840 front 180 (PN "JEDEC-FPDRAM"))
+      (place 
+        U2 158750.0 -116840.0 front 180
+        (pin 14 (clearance_class "kicad_default"))
+        (pin 15 (clearance_class "kicad_default"))
+        (pin 16 (clearance_class "kicad_default"))
+        (pin 17 (clearance_class "kicad_default"))
+        (pin 18 (clearance_class "kicad_default"))
+        (pin 22 (clearance_class "kicad_default"))
+        (pin 23 (clearance_class "kicad_default"))
+        (pin 24 (clearance_class "kicad_default"))
+        (pin 25 (clearance_class "kicad_default"))
+        (pin 26 (clearance_class "kicad_default"))
+        (pin 1 (clearance_class "kicad_default"))
+        (pin 2 (clearance_class "kicad_default"))
+        (pin 3 (clearance_class "kicad_default"))
+        (pin 4 (clearance_class "kicad_default"))
+        (pin 5 (clearance_class "kicad_default"))
+        (pin 9 (clearance_class "kicad_default"))
+        (pin 10 (clearance_class "kicad_default"))
+        (pin 11 (clearance_class "kicad_default"))
+        (pin 12 (clearance_class "kicad_default"))
+        (pin 13 (clearance_class "kicad_default"))
+      )
+      (place 
+        U1 134620.0 -116840.0 front 180
+        (pin 14 (clearance_class "kicad_default"))
+        (pin 15 (clearance_class "kicad_default"))
+        (pin 16 (clearance_class "kicad_default"))
+        (pin 17 (clearance_class "kicad_default"))
+        (pin 18 (clearance_class "kicad_default"))
+        (pin 22 (clearance_class "kicad_default"))
+        (pin 23 (clearance_class "kicad_default"))
+        (pin 24 (clearance_class "kicad_default"))
+        (pin 25 (clearance_class "kicad_default"))
+        (pin 26 (clearance_class "kicad_default"))
+        (pin 1 (clearance_class "kicad_default"))
+        (pin 2 (clearance_class "kicad_default"))
+        (pin 3 (clearance_class "kicad_default"))
+        (pin 4 (clearance_class "kicad_default"))
+        (pin 5 (clearance_class "kicad_default"))
+        (pin 9 (clearance_class "kicad_default"))
+        (pin 10 (clearance_class "kicad_default"))
+        (pin 11 (clearance_class "kicad_default"))
+        (pin 12 (clearance_class "kicad_default"))
+        (pin 13 (clearance_class "kicad_default"))
+      )
     )
     (component Sebs:30pinSIMM
-      (place B1 114300 -127000 front 0 (PN 30pinSIMM))
+      (place 
+        B1 114300.0 -127000.0 front 0
+        (pin 21 (clearance_class "kicad_default"))
+        (pin 20 (clearance_class "kicad_default"))
+        (pin 29 (clearance_class "kicad_default"))
+        (pin 28 (clearance_class "kicad_default"))
+        (pin 27 (clearance_class "kicad_default"))
+        (pin 19 (clearance_class "kicad_default"))
+        (pin 30 (clearance_class "kicad_default"))
+        (pin 26 (clearance_class "kicad_default"))
+        (pin 17 (clearance_class "kicad_default"))
+        (pin 25 (clearance_class "kicad_default"))
+        (pin 22 (clearance_class "kicad_default"))
+        (pin 18 (clearance_class "kicad_default"))
+        (pin 24 (clearance_class "kicad_default"))
+        (pin 23 (clearance_class "kicad_default"))
+        (pin 12 (clearance_class "kicad_default"))
+        (pin 11 (clearance_class "kicad_default"))
+        (pin 10 (clearance_class "kicad_default"))
+        (pin 16 (clearance_class "kicad_default"))
+        (pin 13 (clearance_class "kicad_default"))
+        (pin 9 (clearance_class "kicad_default"))
+        (pin 15 (clearance_class "kicad_default"))
+        (pin 14 (clearance_class "kicad_default"))
+        (pin 7 (clearance_class "kicad_default"))
+        (pin 8 (clearance_class "kicad_default"))
+        (pin 6 (clearance_class "kicad_default"))
+        (pin 5 (clearance_class "kicad_default"))
+        (pin 4 (clearance_class "kicad_default"))
+        (pin 3 (clearance_class "kicad_default"))
+        (pin 2 (clearance_class "kicad_default"))
+        (pin 1 (clearance_class "kicad_default"))
+      )
     )
   )
   (library
     (image "Sebs:SOJ-20"
-      (outline (path signal 120  8509 -4318  -8509 -4318))
-      (outline (path signal 120  8509 4318  -8509 4318))
-      (outline (path signal 150  8509 -2413  -8509 -2413))
-      (outline (path signal 150  8509 2413  8509 -2413))
-      (outline (path signal 150  -8509 2413  8509 2413))
-      (outline (path signal 150  -8509 -2413  -8509 -1016))
-      (outline (path signal 120  -8509 -4318  -8509 4318))
-      (outline (path signal 120  8509 3810  -8509 3810))
-      (outline (path signal 120  8509 -3810  -8509 -3810))
-      (outline (path signal 120  -8509 3429  8509 3429))
-      (outline (path signal 120  -8509 -3429  8509 -3429))
-      (outline (path signal 120  8509 -4318  8509 4318))
-      (outline (path signal 150  -8509 1016  -8509 2413))
-      (pin Rect[T]Pad_800x2000_um 14 7493 3556)
-      (pin Rect[T]Pad_800x2000_um 15 6223 3556)
-      (pin Rect[T]Pad_800x2000_um 16 4953 3556)
-      (pin Rect[T]Pad_800x2000_um 17 3683 3556)
-      (pin Rect[T]Pad_800x2000_um 18 2413 3556)
-      (pin Rect[T]Pad_800x2000_um 22 -2667 3556)
-      (pin Rect[T]Pad_800x2000_um 23 -3937 3556)
-      (pin Rect[T]Pad_800x2000_um 24 -5207 3556)
-      (pin Rect[T]Pad_800x2000_um 25 -6477 3556)
-      (pin Rect[T]Pad_800x2000_um 26 -7620 3556)
-      (pin Rect[T]Pad_800x2000_um 1 -7620 -3556)
-      (pin Rect[T]Pad_800x2000_um 2 -6350 -3556)
-      (pin Rect[T]Pad_800x2000_um 3 -5080 -3556)
-      (pin Rect[T]Pad_800x2000_um 4 -3810 -3556)
-      (pin Rect[T]Pad_800x2000_um 5 -2540 -3556)
-      (pin Rect[T]Pad_800x2000_um 9 2540 -3556)
-      (pin Rect[T]Pad_800x2000_um 10 3810 -3556)
-      (pin Rect[T]Pad_800x2000_um 11 5080 -3556)
-      (pin Rect[T]Pad_800x2000_um 12 6350 -3556)
-      (pin Rect[T]Pad_800x2000_um 13 7620 -3556)
+      (side front)
+      (pin "Rect[T]Pad_800x2000_um" 14 7493.0 3556.0)
+      (pin "Rect[T]Pad_800x2000_um" 15 6223.0 3556.0)
+      (pin "Rect[T]Pad_800x2000_um" 16 4953.0 3556.0)
+      (pin "Rect[T]Pad_800x2000_um" 17 3683.0 3556.0)
+      (pin "Rect[T]Pad_800x2000_um" 18 2413.0 3556.0)
+      (pin "Rect[T]Pad_800x2000_um" 22 -2667.0 3556.0)
+      (pin "Rect[T]Pad_800x2000_um" 23 -3937.0 3556.0)
+      (pin "Rect[T]Pad_800x2000_um" 24 -5207.0 3556.0)
+      (pin "Rect[T]Pad_800x2000_um" 25 -6477.0 3556.0)
+      (pin "Rect[T]Pad_800x2000_um" 26 -7620.0 3556.0)
+      (pin "Rect[T]Pad_800x2000_um" 1 -7620.0 -3556.0)
+      (pin "Rect[T]Pad_800x2000_um" 2 -6350.0 -3556.0)
+      (pin "Rect[T]Pad_800x2000_um" 3 -5080.0 -3556.0)
+      (pin "Rect[T]Pad_800x2000_um" 4 -3810.0 -3556.0)
+      (pin "Rect[T]Pad_800x2000_um" 5 -2540.0 -3556.0)
+      (pin "Rect[T]Pad_800x2000_um" 9 2540.0 -3556.0)
+      (pin "Rect[T]Pad_800x2000_um" 10 3810.0 -3556.0)
+      (pin "Rect[T]Pad_800x2000_um" 11 5080.0 -3556.0)
+      (pin "Rect[T]Pad_800x2000_um" 12 6350.0 -3556.0)
+      (pin "Rect[T]Pad_800x2000_um" 13 7620.0 -3556.0)
+      (outline
+        (polygon signal 0
+          -8533.9 -4378.0
+          8533.9 -4378.0
+          8569.0 -4342.9
+          8569.0 -4293.1
+          8533.9 -4258.0
+          -8533.9 -4258.0
+          -8569.0 -4293.1
+          -8569.0 -4342.9
+        )
+      )
+      (outline
+        (polygon signal 0
+          -8533.9 4258.0
+          8533.9 4258.0
+          8569.0 4293.1
+          8569.0 4342.9
+          8533.9 4378.0
+          -8533.9 4378.0
+          -8569.0 4342.9
+          -8569.0 4293.1
+        )
+      )
+      (outline
+        (polygon signal 0
+          -8540.1 -2488.0
+          8540.1 -2488.0
+          8584.0 -2444.1
+          8584.0 -2381.9
+          8540.1 -2338.0
+          -8540.1 -2338.0
+          -8584.0 -2381.9
+          -8584.0 -2444.1
+        )
+      )
+      (outline
+        (polygon signal 0
+          8477.9 -2488.0
+          8540.1 -2488.0
+          8584.0 -2444.1
+          8584.0 2444.1
+          8540.1 2488.0
+          8477.9 2488.0
+          8434.0 2444.1
+          8434.0 -2444.1
+        )
+      )
+      (outline
+        (polygon signal 0
+          -8540.1 2338.0
+          8540.1 2338.0
+          8584.0 2381.9
+          8584.0 2444.1
+          8540.1 2488.0
+          -8540.1 2488.0
+          -8584.0 2444.1
+          -8584.0 2381.9
+        )
+      )
+      (outline
+        (polygon signal 0
+          -8540.1 -2488.0
+          -8477.9 -2488.0
+          -8434.0 -2444.1
+          -8434.0 -984.9
+          -8477.9 -941.0
+          -8540.1 -941.0
+          -8584.0 -984.9
+          -8584.0 -2444.1
+        )
+      )
+      (outline
+        (polygon signal 0
+          -8533.9 -4378.0
+          -8484.1 -4378.0
+          -8449.0 -4342.9
+          -8449.0 4342.9
+          -8484.1 4378.0
+          -8533.9 4378.0
+          -8569.0 4342.9
+          -8569.0 -4342.9
+        )
+      )
+      (outline
+        (polygon signal 0
+          -8533.9 3750.0
+          8533.9 3750.0
+          8569.0 3785.1
+          8569.0 3834.9
+          8533.9 3870.0
+          -8533.9 3870.0
+          -8569.0 3834.9
+          -8569.0 3785.1
+        )
+      )
+      (outline
+        (polygon signal 0
+          -8533.9 -3870.0
+          8533.9 -3870.0
+          8569.0 -3834.9
+          8569.0 -3785.1
+          8533.9 -3750.0
+          -8533.9 -3750.0
+          -8569.0 -3785.1
+          -8569.0 -3834.9
+        )
+      )
+      (outline
+        (polygon signal 0
+          -8533.9 3369.0
+          8533.9 3369.0
+          8569.0 3404.1
+          8569.0 3453.9
+          8533.9 3489.0
+          -8533.9 3489.0
+          -8569.0 3453.9
+          -8569.0 3404.1
+        )
+      )
+      (outline
+        (polygon signal 0
+          -8533.9 -3489.0
+          8533.9 -3489.0
+          8569.0 -3453.9
+          8569.0 -3404.1
+          8533.9 -3369.0
+          -8533.9 -3369.0
+          -8569.0 -3404.1
+          -8569.0 -3453.9
+        )
+      )
+      (outline
+        (polygon signal 0
+          8484.1 -4378.0
+          8533.9 -4378.0
+          8569.0 -4342.9
+          8569.0 4342.9
+          8533.9 4378.0
+          8484.1 4378.0
+          8449.0 4342.9
+          8449.0 -4342.9
+        )
+      )
+      (outline
+        (polygon signal 0
+          -8540.1 941.0
+          -8477.9 941.0
+          -8434.0 984.9
+          -8434.0 2444.1
+          -8477.9 2488.0
+          -8540.1 2488.0
+          -8584.0 2444.1
+          -8584.0 984.9
+        )
+      )
     )
-    (image Capacitors_SMD:C_0805_HandSoldering
-      (outline (path signal 50  2250 -870  -2250 -870))
-      (outline (path signal 50  2250 -870  2250 880))
-      (outline (path signal 50  -2250 880  -2250 -870))
-      (outline (path signal 50  -2250 880  2250 880))
-      (outline (path signal 120  -500 -850  500 -850))
-      (outline (path signal 120  500 850  -500 850))
-      (outline (path signal 100  -1000 620  1000 620))
-      (outline (path signal 100  1000 620  1000 -620))
-      (outline (path signal 100  1000 -620  -1000 -620))
-      (outline (path signal 100  -1000 -620  -1000 620))
-      (pin Rect[T]Pad_1500x1250_um 1 -1250 0)
-      (pin Rect[T]Pad_1500x1250_um 2 1250 0)
+    (image "Capacitors_SMD:C_0805_HandSoldering"
+      (side front)
+      (pin "Rect[T]Pad_1500x1250_um" 1 -1250.0 0.0)
+      (pin "Rect[T]Pad_1500x1250_um" 2 1250.0 0.0)
+      (outline
+        (polygon signal 0
+          -2260.4 -895.0
+          2260.4 -895.0
+          2275.0 -880.4
+          2275.0 -859.6
+          2260.4 -845.0
+          -2260.4 -845.0
+          -2275.0 -859.6
+          -2275.0 -880.4
+        )
+      )
+      (outline
+        (polygon signal 0
+          2239.6 -895.0
+          2260.4 -895.0
+          2275.0 -880.4
+          2275.0 890.4
+          2260.4 905.0
+          2239.6 905.0
+          2225.0 890.4
+          2225.0 -880.4
+        )
+      )
+      (outline
+        (polygon signal 0
+          -2260.4 -895.0
+          -2239.6 -895.0
+          -2225.0 -880.4
+          -2225.0 890.4
+          -2239.6 905.0
+          -2260.4 905.0
+          -2275.0 890.4
+          -2275.0 -880.4
+        )
+      )
+      (outline
+        (polygon signal 0
+          -2260.4 855.0
+          2260.4 855.0
+          2275.0 869.6
+          2275.0 890.4
+          2260.4 905.0
+          -2260.4 905.0
+          -2275.0 890.4
+          -2275.0 869.6
+        )
+      )
+      (outline
+        (polygon signal 0
+          -524.9 -910.0
+          524.9 -910.0
+          560.0 -874.9
+          560.0 -825.1
+          524.9 -790.0
+          -524.9 -790.0
+          -560.0 -825.1
+          -560.0 -874.9
+        )
+      )
+      (outline
+        (polygon signal 0
+          -524.9 790.0
+          524.9 790.0
+          560.0 825.1
+          560.0 874.9
+          524.9 910.0
+          -524.9 910.0
+          -560.0 874.9
+          -560.0 825.1
+        )
+      )
+      (outline
+        (polygon signal 0
+          -1020.7 570.0
+          1020.7 570.0
+          1050.0 599.3
+          1050.0 640.7
+          1020.7 670.0
+          -1020.7 670.0
+          -1050.0 640.7
+          -1050.0 599.3
+        )
+      )
+      (outline
+        (polygon signal 0
+          979.3 -670.0
+          1020.7 -670.0
+          1050.0 -640.7
+          1050.0 640.7
+          1020.7 670.0
+          979.3 670.0
+          950.0 640.7
+          950.0 -640.7
+        )
+      )
+      (outline
+        (polygon signal 0
+          -1020.7 -670.0
+          1020.7 -670.0
+          1050.0 -640.7
+          1050.0 -599.3
+          1020.7 -570.0
+          -1020.7 -570.0
+          -1050.0 -599.3
+          -1050.0 -640.7
+        )
+      )
+      (outline
+        (polygon signal 0
+          -1020.7 -670.0
+          -979.3 -670.0
+          -950.0 -640.7
+          -950.0 640.7
+          -979.3 670.0
+          -1020.7 670.0
+          -1050.0 640.7
+          -1050.0 -640.7
+        )
+      )
     )
-    (image Capacitors_SMD:C_0805_HandSoldering::1
-      (outline (path signal 100  -1000 -620  -1000 620))
-      (outline (path signal 100  1000 -620  -1000 -620))
-      (outline (path signal 100  1000 620  1000 -620))
-      (outline (path signal 100  -1000 620  1000 620))
-      (outline (path signal 120  500 850  -500 850))
-      (outline (path signal 120  -500 -850  500 -850))
-      (outline (path signal 50  -2250 880  2250 880))
-      (outline (path signal 50  -2250 880  -2250 -870))
-      (outline (path signal 50  2250 -870  2250 880))
-      (outline (path signal 50  2250 -870  -2250 -870))
-      (pin Rect[T]Pad_1500x1250_um 1 -1250 0)
-      (pin Rect[T]Pad_1500x1250_um 2 1250 0)
+    (image "Capacitors_SMD:C_0805_HandSoldering::1"
+      (side front)
+      (pin "Rect[T]Pad_1500x1250_um" 1 -1250.0 0.0)
+      (pin "Rect[T]Pad_1500x1250_um" 2 1250.0 0.0)
+      (outline
+        (polygon signal 0
+          -1020.7 -670.0
+          -979.3 -670.0
+          -950.0 -640.7
+          -950.0 640.7
+          -979.3 670.0
+          -1020.7 670.0
+          -1050.0 640.7
+          -1050.0 -640.7
+        )
+      )
+      (outline
+        (polygon signal 0
+          -1020.7 -670.0
+          1020.7 -670.0
+          1050.0 -640.7
+          1050.0 -599.3
+          1020.7 -570.0
+          -1020.7 -570.0
+          -1050.0 -599.3
+          -1050.0 -640.7
+        )
+      )
+      (outline
+        (polygon signal 0
+          979.3 -670.0
+          1020.7 -670.0
+          1050.0 -640.7
+          1050.0 640.7
+          1020.7 670.0
+          979.3 670.0
+          950.0 640.7
+          950.0 -640.7
+        )
+      )
+      (outline
+        (polygon signal 0
+          -1020.7 570.0
+          1020.7 570.0
+          1050.0 599.3
+          1050.0 640.7
+          1020.7 670.0
+          -1020.7 670.0
+          -1050.0 640.7
+          -1050.0 599.3
+        )
+      )
+      (outline
+        (polygon signal 0
+          -524.9 790.0
+          524.9 790.0
+          560.0 825.1
+          560.0 874.9
+          524.9 910.0
+          -524.9 910.0
+          -560.0 874.9
+          -560.0 825.1
+        )
+      )
+      (outline
+        (polygon signal 0
+          -524.9 -910.0
+          524.9 -910.0
+          560.0 -874.9
+          560.0 -825.1
+          524.9 -790.0
+          -524.9 -790.0
+          -560.0 -825.1
+          -560.0 -874.9
+        )
+      )
+      (outline
+        (polygon signal 0
+          -2260.4 855.0
+          2260.4 855.0
+          2275.0 869.6
+          2275.0 890.4
+          2260.4 905.0
+          -2260.4 905.0
+          -2275.0 890.4
+          -2275.0 869.6
+        )
+      )
+      (outline
+        (polygon signal 0
+          -2260.4 -895.0
+          -2239.6 -895.0
+          -2225.0 -880.4
+          -2225.0 890.4
+          -2239.6 905.0
+          -2260.4 905.0
+          -2275.0 890.4
+          -2275.0 -880.4
+        )
+      )
+      (outline
+        (polygon signal 0
+          2239.6 -895.0
+          2260.4 -895.0
+          2275.0 -880.4
+          2275.0 890.4
+          2260.4 905.0
+          2239.6 905.0
+          2225.0 890.4
+          2225.0 -880.4
+        )
+      )
+      (outline
+        (polygon signal 0
+          -2260.4 -895.0
+          2260.4 -895.0
+          2275.0 -880.4
+          2275.0 -859.6
+          2260.4 -845.0
+          -2260.4 -845.0
+          -2275.0 -859.6
+          -2275.0 -880.4
+        )
+      )
     )
-    (image Mounting_Holes:MountingHole_3.2mm_M3
-      (outline (path signal 150  3200 0  3119.77 -712.067  2883.1 -1388.43  2501.86 -1995.17
-            1995.17 -2501.86  1388.43 -2883.1  712.067 -3119.77  0 -3200
-            -712.067 -3119.77  -1388.43 -2883.1  -1995.17 -2501.86  -2501.86 -1995.17
-            -2883.1 -1388.43  -3119.77 -712.067  -3200 0  -3119.77 712.067
-            -2883.1 1388.43  -2501.86 1995.17  -1995.17 2501.86  -1388.43 2883.1
-            -712.067 3119.77  0 3200  712.067 3119.77  1388.43 2883.1  1995.17 2501.86
-            2501.86 1995.17  2883.1 1388.43  3119.77 712.067  3200 0))
-      (outline (path signal 50  3450 0  3369.34 -741.648  3131.14 -1448.62  2746.52 -2087.85
-            2233.48 -2629.46  1616.01 -3048.12  922.973 -3324.25  186.779 -3444.94
-            -558.148 -3404.55  -1276.98 -3204.97  -1936.1 -2855.53  -2504.68 -2372.56
-            -2956.16 -1778.66  -3269.4 -1101.59  -3429.78 -373.011  -3429.78 373.011
-            -3269.4 1101.59  -2956.16 1778.66  -2504.68 2372.56  -1936.1 2855.53
-            -1276.98 3204.97  -558.148 3404.55  186.779 3444.94  922.973 3324.25
-            1616.01 3048.12  2233.48 2629.46  2746.52 2087.85  3131.14 1448.62
-            3369.34 741.648  3450 0))
-      (keepout "" (circle F.Cu 3200))
-      (keepout "" (circle In1.Cu 3200))
-      (keepout "" (circle In2.Cu 3200))
-      (keepout "" (circle B.Cu 3200))
+    (image "Mounting_Holes:MountingHole_3.2mm_M3"
+      (side front)
+      (keepout
+        (circle F.Cu 3200.0 0.0 0.0)
+      )
+      (keepout
+        (circle In1.Cu 3200.0 0.0 0.0)
+      )
+      (keepout
+        (circle In2.Cu 3200.0 0.0 0.0)
+      )
+      (keepout
+        (circle B.Cu 3200.0 0.0 0.0)
+      )
+      (outline
+        (polygon signal 0
+          -4.4395261845386536 -3275.0
+          4.4395261845386536 -3275.0
+          728.9514728756492 -3193.402109079305
+          1421.1078146370514 -2951.1525066914237
+          2042.2700354609929 -2560.929964539007
+          2560.929964539007 -2042.2700354609929
+          2951.1525066914237 -1421.1078146370514
+          3193.402109079305 -728.9514728756492
+          3275.0 -4.4395261845386536
+          3275.0 4.4395261845386536
+          3193.402109079305 728.9514728756492
+          2951.1525066914237 1421.1078146370514
+          2560.929964539007 2042.2700354609929
+          2042.2700354609929 2560.929964539007
+          1421.1078146370514 2951.1525066914237
+          728.9514728756492 3193.402109079305
+          4.4395261845386536 3275.0
+          -4.4395261845386536 3275.0
+          -728.9514728756492 3193.402109079305
+          -1421.1078146370514 2951.1525066914237
+          -2042.2700354609929 2560.929964539007
+          -2560.929964539007 2042.2700354609929
+          -2951.1525066914237 1421.1078146370514
+          -3193.402109079305 728.9514728756492
+          -3275.0 4.4395261845386536
+          -3275.0 -4.4395261845386536
+          -3193.402109079305 -728.9514728756492
+          -2951.1525066914237 -1421.1078146370514
+          -2560.929964539007 -2042.2700354609929
+          -2042.2700354609929 -2560.929964539007
+          -1421.1078146370514 -2951.1525066914237
+          -728.9514728756492 -3193.402109079305
+        )
+      )
+      (outline
+        (polygon signal 0
+          186.8 -3469.9
+          188.62982601491302 -3469.9
+          929.8241136160492 -3348.381186479955
+          1627.8075566449454 -3070.2957194954265
+          2249.643790849673 -2648.756209150327
+          2250.0254355400693 -2648.3745644599303
+          2766.6396961055525 -2102.858102572363
+          3153.93707586727 -1459.1750938784214
+          3393.779808070992 -747.2993102175004
+          3475.0 -0.9189591078066914
+          3475.0 0.9189591078066914
+          3393.779808070992 747.2993102175004
+          3153.935808930365 1459.178854266296
+          2766.6481636957037 2102.9463831236
+          2249.962937062937 2648.4370629370633
+          2249.643790849673 2648.756209150327
+          1627.8136561864471 3070.2915846483456
+          929.8159699886376 3348.483447459074
+          188.6313432835821 3469.9
+          186.8 3469.9
+          -562.1260317381026 3429.382186764605
+          -1286.500354814431 3228.2622606468767
+          -1950.2061239515067 2876.319966134044
+          -2521.9504084014 2390.7495915985996
+          -2523.4174157303373 2389.282584269663
+          -2977.6395999888723 1791.801841786509
+          -3293.274506040103 1109.4378734362913
+          -3454.8 375.72543640897754
+          -3454.8 -375.72543640897754
+          -3293.274506040103 -1109.4378734362913
+          -2977.6395999888723 -1791.801841786509
+          -2523.4174157303373 -2389.282584269663
+          -2521.9504084014 -2390.7495915985996
+          -1950.2061239515067 -2876.319966134044
+          -1286.4951265101436 -3228.2650330521997
+          -562.1309607349169 -3429.2813789586644
+        )
+      )
     )
     (image "Sebs:SOJ-20::1"
-      (outline (path signal 150  -8509 1016  -8509 2413))
-      (outline (path signal 120  8509 -4318  8509 4318))
-      (outline (path signal 120  -8509 -3429  8509 -3429))
-      (outline (path signal 120  -8509 3429  8509 3429))
-      (outline (path signal 120  8509 -3810  -8509 -3810))
-      (outline (path signal 120  8509 3810  -8509 3810))
-      (outline (path signal 120  -8509 -4318  -8509 4318))
-      (outline (path signal 150  -8509 -2413  -8509 -1016))
-      (outline (path signal 150  -8509 2413  8509 2413))
-      (outline (path signal 150  8509 2413  8509 -2413))
-      (outline (path signal 150  8509 -2413  -8509 -2413))
-      (outline (path signal 120  8509 4318  -8509 4318))
-      (outline (path signal 120  8509 -4318  -8509 -4318))
-      (pin Rect[T]Pad_800x2000_um 14 7493 3556)
-      (pin Rect[T]Pad_800x2000_um 15 6223 3556)
-      (pin Rect[T]Pad_800x2000_um 16 4953 3556)
-      (pin Rect[T]Pad_800x2000_um 17 3683 3556)
-      (pin Rect[T]Pad_800x2000_um 18 2413 3556)
-      (pin Rect[T]Pad_800x2000_um 22 -2667 3556)
-      (pin Rect[T]Pad_800x2000_um 23 -3937 3556)
-      (pin Rect[T]Pad_800x2000_um 24 -5207 3556)
-      (pin Rect[T]Pad_800x2000_um 25 -6477 3556)
-      (pin Rect[T]Pad_800x2000_um 26 -7620 3556)
-      (pin Rect[T]Pad_800x2000_um 1 -7620 -3556)
-      (pin Rect[T]Pad_800x2000_um 2 -6350 -3556)
-      (pin Rect[T]Pad_800x2000_um 3 -5080 -3556)
-      (pin Rect[T]Pad_800x2000_um 4 -3810 -3556)
-      (pin Rect[T]Pad_800x2000_um 5 -2540 -3556)
-      (pin Rect[T]Pad_800x2000_um 9 2540 -3556)
-      (pin Rect[T]Pad_800x2000_um 10 3810 -3556)
-      (pin Rect[T]Pad_800x2000_um 11 5080 -3556)
-      (pin Rect[T]Pad_800x2000_um 12 6350 -3556)
-      (pin Rect[T]Pad_800x2000_um 13 7620 -3556)
+      (side front)
+      (pin "Rect[T]Pad_800x2000_um" 14 7493.0 3556.0)
+      (pin "Rect[T]Pad_800x2000_um" 15 6223.0 3556.0)
+      (pin "Rect[T]Pad_800x2000_um" 16 4953.0 3556.0)
+      (pin "Rect[T]Pad_800x2000_um" 17 3683.0 3556.0)
+      (pin "Rect[T]Pad_800x2000_um" 18 2413.0 3556.0)
+      (pin "Rect[T]Pad_800x2000_um" 22 -2667.0 3556.0)
+      (pin "Rect[T]Pad_800x2000_um" 23 -3937.0 3556.0)
+      (pin "Rect[T]Pad_800x2000_um" 24 -5207.0 3556.0)
+      (pin "Rect[T]Pad_800x2000_um" 25 -6477.0 3556.0)
+      (pin "Rect[T]Pad_800x2000_um" 26 -7620.0 3556.0)
+      (pin "Rect[T]Pad_800x2000_um" 1 -7620.0 -3556.0)
+      (pin "Rect[T]Pad_800x2000_um" 2 -6350.0 -3556.0)
+      (pin "Rect[T]Pad_800x2000_um" 3 -5080.0 -3556.0)
+      (pin "Rect[T]Pad_800x2000_um" 4 -3810.0 -3556.0)
+      (pin "Rect[T]Pad_800x2000_um" 5 -2540.0 -3556.0)
+      (pin "Rect[T]Pad_800x2000_um" 9 2540.0 -3556.0)
+      (pin "Rect[T]Pad_800x2000_um" 10 3810.0 -3556.0)
+      (pin "Rect[T]Pad_800x2000_um" 11 5080.0 -3556.0)
+      (pin "Rect[T]Pad_800x2000_um" 12 6350.0 -3556.0)
+      (pin "Rect[T]Pad_800x2000_um" 13 7620.0 -3556.0)
+      (outline
+        (polygon signal 0
+          -8540.1 941.0
+          -8477.9 941.0
+          -8434.0 984.9
+          -8434.0 2444.1
+          -8477.9 2488.0
+          -8540.1 2488.0
+          -8584.0 2444.1
+          -8584.0 984.9
+        )
+      )
+      (outline
+        (polygon signal 0
+          8484.1 -4378.0
+          8533.9 -4378.0
+          8569.0 -4342.9
+          8569.0 4342.9
+          8533.9 4378.0
+          8484.1 4378.0
+          8449.0 4342.9
+          8449.0 -4342.9
+        )
+      )
+      (outline
+        (polygon signal 0
+          -8533.9 -3489.0
+          8533.9 -3489.0
+          8569.0 -3453.9
+          8569.0 -3404.1
+          8533.9 -3369.0
+          -8533.9 -3369.0
+          -8569.0 -3404.1
+          -8569.0 -3453.9
+        )
+      )
+      (outline
+        (polygon signal 0
+          -8533.9 3369.0
+          8533.9 3369.0
+          8569.0 3404.1
+          8569.0 3453.9
+          8533.9 3489.0
+          -8533.9 3489.0
+          -8569.0 3453.9
+          -8569.0 3404.1
+        )
+      )
+      (outline
+        (polygon signal 0
+          -8533.9 -3870.0
+          8533.9 -3870.0
+          8569.0 -3834.9
+          8569.0 -3785.1
+          8533.9 -3750.0
+          -8533.9 -3750.0
+          -8569.0 -3785.1
+          -8569.0 -3834.9
+        )
+      )
+      (outline
+        (polygon signal 0
+          -8533.9 3750.0
+          8533.9 3750.0
+          8569.0 3785.1
+          8569.0 3834.9
+          8533.9 3870.0
+          -8533.9 3870.0
+          -8569.0 3834.9
+          -8569.0 3785.1
+        )
+      )
+      (outline
+        (polygon signal 0
+          -8533.9 -4378.0
+          -8484.1 -4378.0
+          -8449.0 -4342.9
+          -8449.0 4342.9
+          -8484.1 4378.0
+          -8533.9 4378.0
+          -8569.0 4342.9
+          -8569.0 -4342.9
+        )
+      )
+      (outline
+        (polygon signal 0
+          -8540.1 -2488.0
+          -8477.9 -2488.0
+          -8434.0 -2444.1
+          -8434.0 -984.9
+          -8477.9 -941.0
+          -8540.1 -941.0
+          -8584.0 -984.9
+          -8584.0 -2444.1
+        )
+      )
+      (outline
+        (polygon signal 0
+          -8540.1 2338.0
+          8540.1 2338.0
+          8584.0 2381.9
+          8584.0 2444.1
+          8540.1 2488.0
+          -8540.1 2488.0
+          -8584.0 2444.1
+          -8584.0 2381.9
+        )
+      )
+      (outline
+        (polygon signal 0
+          8477.9 -2488.0
+          8540.1 -2488.0
+          8584.0 -2444.1
+          8584.0 2444.1
+          8540.1 2488.0
+          8477.9 2488.0
+          8434.0 2444.1
+          8434.0 -2444.1
+        )
+      )
+      (outline
+        (polygon signal 0
+          -8540.1 -2488.0
+          8540.1 -2488.0
+          8584.0 -2444.1
+          8584.0 -2381.9
+          8540.1 -2338.0
+          -8540.1 -2338.0
+          -8584.0 -2381.9
+          -8584.0 -2444.1
+        )
+      )
+      (outline
+        (polygon signal 0
+          -8533.9 4258.0
+          8533.9 4258.0
+          8569.0 4293.1
+          8569.0 4342.9
+          8533.9 4378.0
+          -8533.9 4378.0
+          -8569.0 4342.9
+          -8569.0 4293.1
+        )
+      )
+      (outline
+        (polygon signal 0
+          -8533.9 -4378.0
+          8533.9 -4378.0
+          8569.0 -4342.9
+          8569.0 -4293.1
+          8533.9 -4258.0
+          -8533.9 -4258.0
+          -8569.0 -4293.1
+          -8569.0 -4342.9
+        )
+      )
     )
     (image Sebs:30pinSIMM
-      (outline (path signal 120  43561 3937  45720 3937))
-      (outline (path signal 120  44704 0  44704 3937))
-      (outline (path signal 120  87122 10160  87040.7 9672.95  86805.7 9238.68  86442.4 8904.25
-            85990.2 8705.9  85498.1 8665.12  85019.5 8786.34  84606.1 9056.41
-            84302.8 9446.08  84142.5 9913.11  84142.5 10406.9  84302.8 10873.9
-            84606.1 11263.6  85019.5 11533.7  85498.1 11654.9  85990.2 11614.1
-            86442.4 11415.8  86805.7 11081.3  87040.7 10647  87122 10160))
-      (outline (path signal 120  85647 10160  89027 10160))
-      (outline (path signal 120  85647 0  85647 10160))
-      (outline (path signal 120  2032 0  89030 0))
-      (outline (path signal 120  0 10160  3380 10160))
-      (outline (path signal 120  3380 0  3380 10160))
-      (outline (path signal 120  4826 10160  4744.73 9672.95  4509.71 9238.68  4146.42 8904.25
-            3694.23 8705.9  3202.13 8665.12  2723.46 8786.34  2310.08 9056.41
-            2006.79 9446.08  1846.46 9913.11  1846.46 10406.9  2006.79 10873.9
-            2310.08 11263.6  2723.46 11533.7  3202.13 11654.9  3694.23 11614.1
-            4146.42 11415.8  4509.71 11081.3  4744.73 10647  4826 10160))
-      (outline (path signal 120  89030 0  89030 16590))
-      (outline (path signal 120  0 6350  0 16590))
-      (outline (path signal 120  2032 0  2032 4318))
-      (outline (path signal 120  0 16590  89030 16590))
-      (outline (path signal 120  43561 3937  44704 5207))
-      (outline (path signal 120  44704 5207  45720 3937))
-      (pin "Rect[A][0,-1400]Pad_1780x3500_um" 21 58674 3302)
-      (pin "Rect[A][0,-1400]Pad_1780x3500_um" 20 56134 3302)
-      (pin "Rect[A][0,-1400]Pad_1780x3500_um" 29 78994 3302)
-      (pin "Rect[A][0,-1400]Pad_1780x3500_um" 28 76454 3302)
-      (pin "Rect[A][0,-1400]Pad_1780x3500_um" 27 73914 3302)
-      (pin "Rect[A][0,-1400]Pad_1780x3500_um" 19 53594 3302)
-      (pin "Rect[A][0,-1400]Pad_1780x3500_um" 30 81534 3302)
-      (pin "Rect[A][0,-1400]Pad_1780x3500_um" 26 71374 3302)
-      (pin "Rect[A][0,-1400]Pad_1780x3500_um" 17 48514 3302)
-      (pin "Rect[A][0,-1400]Pad_1780x3500_um" 25 68834 3302)
-      (pin "Rect[A][0,-1400]Pad_1780x3500_um" 22 61214 3302)
-      (pin "Rect[A][0,-1400]Pad_1780x3500_um" 18 51054 3302)
-      (pin "Rect[A][0,-1400]Pad_1780x3500_um" 24 66294 3302)
-      (pin "Rect[A][0,-1400]Pad_1780x3500_um" 23 63754 3302)
-      (pin "Rect[A][0,-1400]Pad_1780x3500_um" 12 35814 3302)
-      (pin "Rect[A][0,-1400]Pad_1780x3500_um" 11 33274 3302)
-      (pin "Rect[A][0,-1400]Pad_1780x3500_um" 10 30734 3302)
-      (pin "Rect[A][0,-1400]Pad_1780x3500_um" 16 45974 3302)
-      (pin "Rect[A][0,-1400]Pad_1780x3500_um" 13 38354 3302)
-      (pin "Rect[A][0,-1400]Pad_1780x3500_um" 9 28194 3302)
-      (pin "Rect[A][0,-1400]Pad_1780x3500_um" 15 43434 3302)
-      (pin "Rect[A][0,-1400]Pad_1780x3500_um" 14 40894 3302)
-      (pin "Rect[A][0,-1400]Pad_1780x3500_um" 7 23114 3302)
-      (pin "Rect[A][0,-1400]Pad_1780x3500_um" 8 25654 3302)
-      (pin "Rect[A][0,-1400]Pad_1780x3500_um" 6 20574 3302)
-      (pin "Rect[A][0,-1400]Pad_1780x3500_um" 5 18034 3302)
-      (pin "Rect[A][0,-1400]Pad_1780x3500_um" 4 15494 3302)
-      (pin "Rect[A][0,-1400]Pad_1780x3500_um" 3 12954 3302)
-      (pin "Rect[A][0,-1400]Pad_1780x3500_um" 2 10414 3302)
-      (pin "Rect[A][0,-1400]Pad_1780x3500_um" 1 7874 3302)
+      (side front)
+      (pin "Rect[A][0,-1400]Pad_1780x3500_um" 21 58674.0 3302.0)
+      (pin "Rect[A][0,-1400]Pad_1780x3500_um" 20 56134.0 3302.0)
+      (pin "Rect[A][0,-1400]Pad_1780x3500_um" 29 78994.0 3302.0)
+      (pin "Rect[A][0,-1400]Pad_1780x3500_um" 28 76454.0 3302.0)
+      (pin "Rect[A][0,-1400]Pad_1780x3500_um" 27 73914.0 3302.0)
+      (pin "Rect[A][0,-1400]Pad_1780x3500_um" 19 53594.0 3302.0)
+      (pin "Rect[A][0,-1400]Pad_1780x3500_um" 30 81534.0 3302.0)
+      (pin "Rect[A][0,-1400]Pad_1780x3500_um" 26 71374.0 3302.0)
+      (pin "Rect[A][0,-1400]Pad_1780x3500_um" 17 48514.0 3302.0)
+      (pin "Rect[A][0,-1400]Pad_1780x3500_um" 25 68834.0 3302.0)
+      (pin "Rect[A][0,-1400]Pad_1780x3500_um" 22 61214.0 3302.0)
+      (pin "Rect[A][0,-1400]Pad_1780x3500_um" 18 51054.0 3302.0)
+      (pin "Rect[A][0,-1400]Pad_1780x3500_um" 24 66294.0 3302.0)
+      (pin "Rect[A][0,-1400]Pad_1780x3500_um" 23 63754.0 3302.0)
+      (pin "Rect[A][0,-1400]Pad_1780x3500_um" 12 35814.0 3302.0)
+      (pin "Rect[A][0,-1400]Pad_1780x3500_um" 11 33274.0 3302.0)
+      (pin "Rect[A][0,-1400]Pad_1780x3500_um" 10 30734.0 3302.0)
+      (pin "Rect[A][0,-1400]Pad_1780x3500_um" 16 45974.0 3302.0)
+      (pin "Rect[A][0,-1400]Pad_1780x3500_um" 13 38354.0 3302.0)
+      (pin "Rect[A][0,-1400]Pad_1780x3500_um" 9 28194.0 3302.0)
+      (pin "Rect[A][0,-1400]Pad_1780x3500_um" 15 43434.0 3302.0)
+      (pin "Rect[A][0,-1400]Pad_1780x3500_um" 14 40894.0 3302.0)
+      (pin "Rect[A][0,-1400]Pad_1780x3500_um" 7 23114.0 3302.0)
+      (pin "Rect[A][0,-1400]Pad_1780x3500_um" 8 25654.0 3302.0)
+      (pin "Rect[A][0,-1400]Pad_1780x3500_um" 6 20574.0 3302.0)
+      (pin "Rect[A][0,-1400]Pad_1780x3500_um" 5 18034.0 3302.0)
+      (pin "Rect[A][0,-1400]Pad_1780x3500_um" 4 15494.0 3302.0)
+      (pin "Rect[A][0,-1400]Pad_1780x3500_um" 3 12954.0 3302.0)
+      (pin "Rect[A][0,-1400]Pad_1780x3500_um" 2 10414.0 3302.0)
+      (pin "Rect[A][0,-1400]Pad_1780x3500_um" 1 7874.0 3302.0)
+      (outline
+        (polygon signal 0
+          43536.1 3877.0
+          45744.9 3877.0
+          45780.0 3912.1
+          45780.0 3961.9
+          45744.9 3997.0
+          43536.1 3997.0
+          43501.0 3961.9
+          43501.0 3912.1
+        )
+      )
+      (outline
+        (polygon signal 0
+          44679.1 -60.0
+          44728.9 -60.0
+          44764.0 -24.9
+          44764.0 3961.9
+          44728.9 3997.0
+          44679.1 3997.0
+          44644.0 3961.9
+          44644.0 -24.9
+        )
+      )
+      (outline
+        (polygon signal 0
+          85490.59719471948 8605.1
+          85500.51225490196 8605.1
+          86005.09458814835 8646.934909970438
+          86475.61517733306 8853.372957060772
+          86848.44117647059 9196.54117647059
+          86854.2085800301 9202.308580030105
+          87098.19831413883 9653.2223737468
+          87182.0 10155.207872078721
+          87182.0 10164.792127921279
+          87098.19831413883 10666.7776262532
+          86854.2085800301 11117.691419969895
+          86847.328125 11124.571875
+          86475.78836574937 11466.65844111433
+          86005.10385048488 11673.064322089447
+          85500.51225490196 11714.9
+          85490.59719471948 11714.9
+          84995.00757723855 11589.397572840184
+          84568.01988834613 11310.419888346127
+          84561.34270833334 11303.742708333333
+          84249.34172658353 10902.863108637011
+          84082.5 10416.80517779164
+          84082.5 9903.19482220836
+          84249.34172658353 9417.136891362989
+          84561.34270833334 9016.257291666667
+          84568.01988834613 9009.580111653873
+          84995.00757723855 8730.602427159816
+        )
+      )
+      (outline
+        (polygon signal 0
+          85622.1 10100.0
+          89051.9 10100.0
+          89087.0 10135.1
+          89087.0 10184.9
+          89051.9 10220.0
+          85622.1 10220.0
+          85587.0 10184.9
+          85587.0 10135.1
+        )
+      )
+      (outline
+        (polygon signal 0
+          85622.1 -60.0
+          85671.9 -60.0
+          85707.0 -24.9
+          85707.0 10184.9
+          85671.9 10220.0
+          85622.1 10220.0
+          85587.0 10184.9
+          85587.0 -24.9
+        )
+      )
+      (outline
+        (polygon signal 0
+          2007.1 -60.0
+          89054.9 -60.0
+          89090.0 -24.9
+          89090.0 24.9
+          89054.9 60.0
+          2007.1 60.0
+          1972.0 24.9
+          1972.0 -24.9
+        )
+      )
+      (outline
+        (polygon signal 0
+          -24.9 10100.0
+          3404.9 10100.0
+          3440.0 10135.1
+          3440.0 10184.9
+          3404.9 10220.0
+          -24.9 10220.0
+          -60.0 10184.9
+          -60.0 10135.1
+        )
+      )
+      (outline
+        (polygon signal 0
+          3355.1 -60.0
+          3404.9 -60.0
+          3440.0 -24.9
+          3440.0 10184.9
+          3404.9 10220.0
+          3355.1 10220.0
+          3320.0 10184.9
+          3320.0 -24.9
+        )
+      )
+      (outline
+        (polygon signal 0
+          3194.597194719472 8605.1
+          3204.5122549019607 8605.1
+          3709.094588148347 8646.934909970438
+          4179.615177333069 8853.372957060772
+          4552.441176470588 9196.54117647059
+          4558.208580030105 9202.308580030105
+          4802.198314138839 9653.2223737468
+          4886.0 10155.207872078721
+          4886.0 10164.792127921279
+          4802.198314138839 10666.7776262532
+          4558.208580030105 11117.691419969895
+          4551.328125 11124.571875
+          4179.7883657493685 11466.65844111433
+          3709.1038504848825 11673.064322089447
+          3204.5122549019607 11714.9
+          3194.597194719472 11714.9
+          2699.007577238549 11589.397572840184
+          2272.019888346127 11310.419888346127
+          2265.342708333333 11303.742708333333
+          1953.341726583539 10902.863108637011
+          1786.5 10416.80517779164
+          1786.5 9903.19482220836
+          1953.341726583539 9417.136891362989
+          2265.342708333333 9016.257291666667
+          2272.019888346127 9009.580111653873
+          2699.007577238549 8730.602427159816
+        )
+      )
+      (outline
+        (polygon signal 0
+          89005.1 -60.0
+          89054.9 -60.0
+          89090.0 -24.9
+          89090.0 16614.9
+          89054.9 16650.0
+          89005.1 16650.0
+          88970.0 16614.9
+          88970.0 -24.9
+        )
+      )
+      (outline
+        (polygon signal 0
+          -24.9 6290.0
+          24.9 6290.0
+          60.0 6325.1
+          60.0 16614.9
+          24.9 16650.0
+          -24.9 16650.0
+          -60.0 16614.9
+          -60.0 6325.1
+        )
+      )
+      (outline
+        (polygon signal 0
+          2007.1 -60.0
+          2056.9 -60.0
+          2092.0 -24.9
+          2092.0 4342.9
+          2056.9 4378.0
+          2007.1 4378.0
+          1972.0 4342.9
+          1972.0 -24.9
+        )
+      )
+      (outline
+        (polygon signal 0
+          -24.9 16530.0
+          89054.9 16530.0
+          89090.0 16565.1
+          89090.0 16614.9
+          89054.9 16650.0
+          -24.9 16650.0
+          -60.0 16614.9
+          -60.0 16565.1
+        )
+      )
+      (outline
+        (polygon signal 0
+          43536.1 3877.0
+          43585.9 3877.0
+          44764.0 5055.1
+          44764.0 5231.9
+          44728.9 5267.0
+          44679.1 5267.0
+          43501.0 4088.9
+          43501.0 3912.1
+        )
+      )
+      (outline
+        (polygon signal 0
+          45695.1 3877.0
+          45744.9 3877.0
+          45780.0 3912.1
+          45780.0 4215.9
+          44728.9 5267.0
+          44679.1 5267.0
+          44644.0 5231.9
+          44644.0 4928.1
+        )
+      )
     )
-    (padstack Rect[T]Pad_800x2000_um
-      (shape (rect F.Cu -400 -1000 400 1000))
+    (padstack "Rect[T]Pad_800x2000_um"
+      (shape
+        (rect F.Cu -400.0 -1000.0 400.0 1000.0)
+      )
       (attach off)
     )
-    (padstack Rect[T]Pad_1500x1250_um
-      (shape (rect F.Cu -750 -625 750 625))
+    (padstack "Rect[T]Pad_1500x1250_um"
+      (shape
+        (rect F.Cu -750.0 -625.0 750.0 625.0)
+      )
       (attach off)
     )
     (padstack "Rect[A][0,-1400]Pad_1780x3500_um"
-      (shape (rect F.Cu -890 -3150 890 350))
-      (shape (rect In1.Cu -890 -3150 890 350))
-      (shape (rect In2.Cu -890 -3150 890 350))
-      (shape (rect B.Cu -890 -3150 890 350))
+      (shape
+        (rect F.Cu -890.0 -3150.0 890.0 350.0)
+      )
+      (shape
+        (rect In1.Cu -890.0 -3150.0 890.0 350.0)
+      )
+      (shape
+        (rect In2.Cu -890.0 -3150.0 890.0 350.0)
+      )
+      (shape
+        (rect B.Cu -890.0 -3150.0 890.0 350.0)
+      )
       (attach off)
     )
     (padstack "Via[0-3]_800:400_um"
-      (shape (circle F.Cu 800))
-      (shape (circle In1.Cu 800))
-      (shape (circle In2.Cu 800))
-      (shape (circle B.Cu 800))
+      (shape
+        (circle F.Cu 800.0 0.0 0.0)
+      )
+      (shape
+        (circle In1.Cu 800.0 0.0 0.0)
+      )
+      (shape
+        (circle In2.Cu 800.0 0.0 0.0)
+      )
+      (shape
+        (circle B.Cu 800.0 0.0 0.0)
+      )
       (attach off)
     )
   )
   (network
-    (net @:no_net_0
-    )
-    (net WE
-      (pins U3-2 U2-3 U1-3 B1-21)
-    )
-    (net DQ5
-      (pins U2-2 B1-20)
-    )
-    (net DP
-      (pins U3-1 B1-29)
-    )
-    (net CASP
-      (pins U3-24 B1-28)
-    )
-    (net RAS
-      (pins U3-3 U2-4 U1-4 B1-27)
-    )
-    (net "Net-(B1-Pad19)"
-      (pins B1-19)
-    )
-    (net +5V
-      (pins C3-2 C2-2 C1-2 B1-30 B1-1)
-    )
-    (net QP
-      (pins U3-25 B1-26)
-    )
-    (net A8
-      (pins U3-18 U2-18 U1-18 B1-17)
-    )
-    (net DQ7
-      (pins U2-25 B1-25)
-    )
-    (net GND
-      (pins U3-26 U2-22 U2-26 U1-22 U1-26 B1-22 B1-9)
-    )
-    (net A9
-      (pins U3-22 U2-5 U1-5 B1-18)
-    )
-    (net "Net-(B1-Pad24)"
-      (pins B1-24)
-    )
-    (net DQ6
-      (pins U2-24 B1-23)
-    )
-    (net A5
-      (pins U3-15 U2-15 U1-15 B1-12)
-    )
-    (net A4
-      (pins U3-14 U2-14 U1-14 B1-11)
-    )
-    (net DQ2
-      (pins U1-24 B1-10)
-    )
-    (net DQ4
-      (pins U2-1 B1-16)
-    )
-    (net DQ3
-      (pins U1-25 B1-13)
-    )
-    (net A7
-      (pins U3-17 U2-17 U1-17 B1-15)
-    )
-    (net A6
-      (pins U3-16 U2-16 U1-16 B1-14)
-    )
-    (net A2
-      (pins U3-11 U2-11 U1-11 B1-7)
-    )
-    (net A3
-      (pins U3-12 U2-12 U1-12 B1-8)
-    )
-    (net DQ1
-      (pins U1-2 B1-6)
-    )
-    (net A1
-      (pins U3-10 U2-10 U1-10 B1-5)
-    )
-    (net A0
-      (pins U3-9 U2-9 U1-9 B1-4)
-    )
-    (net DQ0
-      (pins U1-1 B1-3)
-    )
-    (net CAS
-      (pins U2-23 U1-23 B1-2)
-    )
-    (net "Net-(C1-Pad1)"
-      (pins C1-1 U1-13)
-    )
-    (net "Net-(C2-Pad1)"
-      (pins C2-1 U2-13)
-    )
-    (net "Net-(C3-Pad1)"
-      (pins U3-13 C3-1)
-    )
-    (net "Net-(U3-Pad23)"
-      (pins U3-23)
-    )
-    (net "Net-(U3-Pad4)"
-      (pins U3-4)
-    )
-    (net "Net-(U3-Pad5)"
-      (pins U3-5)
-    )
-    (class kicad_default "" +5V A0 A1 A2 A3 A4 A5 A6 A7 A8 A9 CAS CASP DP
-      DQ0 DQ1 DQ2 DQ3 DQ4 DQ5 DQ6 DQ7 GND "Net-(B1-Pad19)" "Net-(B1-Pad24)"
-      "Net-(C1-Pad1)" "Net-(C2-Pad1)" "Net-(C3-Pad1)" "Net-(U3-Pad23)" "Net-(U3-Pad4)"
-      "Net-(U3-Pad5)" QP RAS WE
-      (circuit
-        (use_via Via[0-3]_800:400_um)
+    (net "@:no_net_0" 1
+      (pins
       )
+    )
+    (net GND 1
+      (pins
+        B1-9
+        B1-22
+        U1-26
+        U1-22
+        U2-26
+        U2-22
+        U3-26
+      )
+    )
+    (net +5V 1
+      (pins
+        B1-1
+        B1-30
+        C1-2
+        C2-2
+        C3-2
+      )
+    )
+    (net WE 1
+      (pins
+        B1-21
+        U1-3
+        U2-3
+        U3-2
+      )
+    )
+    (net DQ5 1
+      (pins
+        B1-20
+        U2-2
+      )
+    )
+    (net DP 1
+      (pins
+        B1-29
+        U3-1
+      )
+    )
+    (net CASP 1
+      (pins
+        B1-28
+        U3-24
+      )
+    )
+    (net RAS 1
+      (pins
+        B1-27
+        U1-4
+        U2-4
+        U3-3
+      )
+    )
+    (net "Net-(B1-Pad19)" 1
+      (pins
+        B1-19
+      )
+    )
+    (net QP 1
+      (pins
+        B1-26
+        U3-25
+      )
+    )
+    (net A8 1
+      (pins
+        B1-17
+        U1-18
+        U2-18
+        U3-18
+      )
+    )
+    (net DQ7 1
+      (pins
+        B1-25
+        U2-25
+      )
+    )
+    (net A9 1
+      (pins
+        B1-18
+        U1-5
+        U2-5
+        U3-22
+      )
+    )
+    (net "Net-(B1-Pad24)" 1
+      (pins
+        B1-24
+      )
+    )
+    (net DQ6 1
+      (pins
+        B1-23
+        U2-24
+      )
+    )
+    (net A5 1
+      (pins
+        B1-12
+        U1-15
+        U2-15
+        U3-15
+      )
+    )
+    (net A4 1
+      (pins
+        B1-11
+        U1-14
+        U2-14
+        U3-14
+      )
+    )
+    (net DQ2 1
+      (pins
+        B1-10
+        U1-24
+      )
+    )
+    (net DQ4 1
+      (pins
+        B1-16
+        U2-1
+      )
+    )
+    (net DQ3 1
+      (pins
+        B1-13
+        U1-25
+      )
+    )
+    (net A7 1
+      (pins
+        B1-15
+        U1-17
+        U2-17
+        U3-17
+      )
+    )
+    (net A6 1
+      (pins
+        B1-14
+        U1-16
+        U2-16
+        U3-16
+      )
+    )
+    (net A2 1
+      (pins
+        B1-7
+        U1-11
+        U2-11
+        U3-11
+      )
+    )
+    (net A3 1
+      (pins
+        B1-8
+        U1-12
+        U2-12
+        U3-12
+      )
+    )
+    (net DQ1 1
+      (pins
+        B1-6
+        U1-2
+      )
+    )
+    (net A1 1
+      (pins
+        B1-5
+        U1-10
+        U2-10
+        U3-10
+      )
+    )
+    (net A0 1
+      (pins
+        B1-4
+        U1-9
+        U2-9
+        U3-9
+      )
+    )
+    (net DQ0 1
+      (pins
+        B1-3
+        U1-1
+      )
+    )
+    (net CAS 1
+      (pins
+        B1-2
+        U1-23
+        U2-23
+      )
+    )
+    (net "Net-(C1-Pad1)" 1
+      (pins
+        U1-13
+        C1-1
+      )
+    )
+    (net "Net-(C2-Pad1)" 1
+      (pins
+        U2-13
+        C2-1
+      )
+    )
+    (net "Net-(C3-Pad1)" 1
+      (pins
+        C3-1
+        U3-13
+      )
+    )
+    (net "Net-(U3-Pad23)" 1
+      (pins
+        U3-23
+      )
+    )
+    (net "Net-(U3-Pad4)" 1
+      (pins
+        U3-4
+      )
+    )
+    (net "Net-(U3-Pad5)" 1
+      (pins
+        U3-5
+      )
+    )
+    (via 
+      "Via[0-3]_800:400_um" "Via[0-3]_800:400_um" default
+    )
+    (via 
+      "Via[0-3]_800:400_um-kicad_default" "Via[0-3]_800:400_um" "kicad_default"
+    )
+    (via_rule
+      default "Via[0-3]_800:400_um"
+    )
+    (via_rule
+      "kicad_default" "Via[0-3]_800:400_um-kicad_default"
+    )
+    (class default
+      "@:no_net_0"
+      (clearance_class default)
+      (via_rule default)
       (rule
-        (width 250)
-        (clearance 200.1)
+        (width 250.0)
+      )
+      (layer_rule In1.Cu
+        (rule 
+          (width 0.0) 
+        )
+      )
+      (layer_rule In2.Cu
+        (rule 
+          (width 0.0) 
+        )
+      )
+      (circuit 
+        (use_layer F.Cu B.Cu)
+      )
+    )
+    (class "kicad_default"
+      GND +5V WE DQ5 DP CASP RAS "Net-(B1-Pad19)"
+      QP A8 DQ7 A9 "Net-(B1-Pad24)" DQ6 A5 A4
+      DQ2 DQ4 DQ3 A7 A6 A2 A3 DQ1
+      A1 A0 DQ0 CAS "Net-(C1-Pad1)" "Net-(C2-Pad1)" "Net-(C3-Pad1)" "Net-(U3-Pad23)"
+      "Net-(U3-Pad4)" "Net-(U3-Pad5)"
+      (clearance_class "kicad_default")
+      (via_rule kicad_default)
+      (rule
+        (width 250.0)
+      )
+      (layer_rule In1.Cu
+        (rule 
+          (width 0.0) 
+        )
+      )
+      (layer_rule In2.Cu
+        (rule 
+          (width 0.0) 
+        )
+      )
+      (circuit 
+        (use_layer F.Cu B.Cu)
       )
     )
   )
   (wiring
+    (wire
+      (polyline_path F.Cu 250.0
+        175260.0 -113284.0 175260.1 -113284.0 
+        175260.0 -113284.0 175260.0 -113284.1 
+        0.0 -114609.3 0.1 -114609.3 
+      )
+      (net "Net-(C3-Pad1)" 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        171450.0 -115590.0 171450.0 -115589.9 
+        171450.0 -115590.0 171450.1 -115590.0 
+        172400.3 0.0 172400.3 0.1 
+      )
+      (net "Net-(C3-Pad1)" 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        171450.0 -115590.0 171450.1 -115590.0 
+        172400.3 -115590.0 172400.4 -115589.9 
+        0.0 -114609.3 0.1 -114609.3 
+        175260.0 -113284.1 175260.0 -113284.0 
+      )
+      (net "Net-(C3-Pad1)" 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        145352.4 -121679.7 145352.3 -121679.6 
+        145352.4 -121679.7 144994.7 -121679.7 
+        144994.7 -121679.6 144994.7 -121679.7 
+      )
+      (net A4 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        147574.0 -123698.0 147574.0 -123698.1 
+        147574.0 -123698.0 147326.6 -123698.0 
+        145352.4 -121679.7 145352.3 -121679.6 
+        145352.4 -121679.7 145352.4 -121679.6 
+      )
+      (net A4 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        144994.7 -121679.7 145352.4 -121679.7 
+        145352.4 -121679.7 145352.4 -121679.6 
+        145173.6 -121587.4 146006.0 -120755.0 
+        146006.0 -120755.0 146949.9 -120755.0 
+        146949.9 -120755.0 148739.4 -122544.5 
+        159122.1 -121905.2 159122.2 -121905.2 
+        161418.4 -118339.7 161418.5 -118339.6 
+        161418.4 -118339.7 161418.5 -118339.7 
+      )
+      (net A4 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        175387.0 -120396.0 175386.9 -120396.0 
+        175387.0 -120396.0 175387.0 -120395.9 
+        0.0 -119070.7 -0.1 -119070.7 
+      )
+      (net A4 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        161418.4 -118339.7 161418.3 -118339.6 
+        161418.4 -118339.7 161696.2 -118061.9 
+        161696.2 -118061.9 167654.4 -118061.9 
+        167654.4 -118061.9 169988.5 -120396.0 
+        169988.5 -119236.4 169988.6 -119236.4 
+        174661.7 -119070.7 174661.8 -119070.6 
+        -0.1 -119070.7 0.0 -119070.7 
+        175387.0 -120395.9 175387.0 -120396.0 
+      )
+      (net A4 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        177800.0 -113284.0 177800.1 -113284.0 
+        177800.0 -113284.0 177800.0 -113284.1 
+        0.0 -114609.3 0.1 -114609.3 
+      )
+      (net A2 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        175171.6 -115704.4 175171.6 -115704.3 
+        175171.6 -115704.4 176704.9 -115704.4 
+        176704.9 -115704.4 177800.0 -114609.3 
+        177800.0 -114609.3 177800.1 -114609.4 
+      )
+      (net A2 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        158141.0 -114314.2 158140.9 -114314.1 
+        158141.0 -114314.2 158236.9 -114218.3 
+        158236.9 -114218.3 173888.1 -114218.3 
+        175171.6 -115704.4 175171.7 -115704.5 
+        175171.6 -115704.4 175171.5 -115704.4 
+      )
+      (net A2 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        153670.0 -114500.5 153670.0 -114500.4 
+        153670.0 -114500.5 153737.0 -114500.5 
+        153737.0 -114500.5 153845.9 -114609.4 
+        156935.4 -114609.4 157845.8 -114609.4 
+        157845.8 -114609.4 158141.0 -114314.2 
+        158141.0 -114314.2 158141.1 -114314.3 
+      )
+      (net A2 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        159532.5 -112331.2 159532.5 -115429.5 
+        159452.8 -115225.8 153436.8 -115225.8 
+        153436.6 -115226.0 153436.4 -115226.2 
+        153436.4 -115226.2 153436.3 -115226.1 
+      )
+      (net A9 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        137102.5 -114901.4 137102.4 -114901.3 
+        137102.5 -114901.4 137172.3 -114831.6 
+        137172.3 -114831.6 153041.8 -114831.6 
+        153041.8 -114831.6 153436.4 -115226.2 
+        153436.4 -115226.2 153436.3 -115226.3 
+      )
+      (net A9 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        153544.4 -114500.5 153737.1 -114500.5 
+        153670.0 -114609.4 153670.0 -114609.2 
+        153670.1 -114496.7 153670.0 -114496.7 
+      )
+      (net A2 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        137414.0 -123022.7 137414.0 -123022.6 
+        137414.0 -123022.7 145789.8 -123022.7 
+        145789.8 -123022.7 148270.4 -120542.1 
+        148270.4 -120542.1 148270.4 -117787.2 
+        148270.4 -117787.2 150593.5 -115464.1 
+        150593.5 -115464.1 152172.8 -115464.1 
+        152172.8 -115464.1 153136.4 -114500.5 
+        153544.2 -114500.5 153736.7 -114500.5 
+        153670.0 -114609.4 153670.0 -114609.2 
+      )
+      (net A2 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        123190.0 -118090.0 123190.0 -118089.9 
+        123190.0 -118090.0 123190.1 -118090.0 
+        124140.3 0.0 124140.3 0.1 
+      )
+      (net +5V 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        124728.1 -118582.8 124728.1 -118582.9 
+        124728.1 -118582.8 123682.8 -118582.8 
+        124140.3 -118090.0 124140.2 -118089.9 
+        123190.1 -118090.0 123190.0 -118090.0 
+      )
+      (net +5V 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        152589.7 -117314.5 152589.8 -117314.6 
+        153797.0 -119070.7 153797.0 -119070.8 
+        153797.0 -119070.7 153796.9 -119070.6 
+      )
+      (net A6 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        149329.2 -117830.7 149329.1 -117830.6 
+        149329.2 -117830.7 150264.1 -116895.8 
+        153289.3 -117314.5 156142.8 -117314.5 
+        152589.7 -117314.5 152589.8 -117314.6 
+        153797.0 -118521.8 153797.1 -118521.7 
+      )
+      (net A6 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        152589.7 -117314.5 152589.8 -117314.6 
+        153797.0 -118521.8 153797.1 -118521.7 
+        167095.4 -117158.4 168640.9 -117158.4 
+        168640.9 -117158.4 168926.6 -116872.7 
+        168926.6 -116872.7 168926.7 -116872.8 
+      )
+      (net A6 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        177927.0 -120396.0 177926.9 -120396.0 
+        177927.0 -120396.0 177927.0 -120395.9 
+        0.0 -119070.7 -0.1 -119070.7 
+      )
+      (net A6 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        176549.8 -118258.8 176549.9 -118258.7 
+        177738.5 -119447.5 177738.6 -119447.6 
+        -0.1 -119070.7 0.0 -119070.7 
+        177927.0 -120395.9 177927.0 -120396.0 
+      )
+      (net A6 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        172974.0 -123022.7 172973.9 -123022.8 
+        172974.0 -123022.7 172950.2 -122998.9 
+        172950.2 -122998.9 172950.2 -120932.1 
+        172950.2 -120932.1 174898.2 -118984.1 
+        174898.2 -118984.1 176850.3 -118984.1 
+        176850.3 -118984.1 177794.2 -118040.2 
+        177794.2 -118040.2 177794.2 -117141.6 
+        177794.2 -117141.6 177794.3 -117141.6 
+      )
+      (net WE 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        179197.0 -119070.7 179196.9 -119070.8 
+        179197.0 -119070.7 176925.8 -116799.5 
+        170025.5 -116799.6 170025.4 -116799.6 
+        170025.5 -116799.6 169216.3 -117608.8 
+        169216.3 -117608.8 156203.8 -117608.8 
+        156203.8 -117608.8 155398.3 -118414.3 
+        155398.3 -118414.3 155398.2 -118414.2 
+      )
+      (net A7 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        168926.6 -116872.7 168926.6 -116872.6 
+        168926.6 -116872.7 171872.6 -116872.7 
+        171872.6 -116872.7 173270.5 -118270.6 
+        173270.5 -118270.6 176538.0 -118270.6 
+        176538.0 -118270.6 176549.8 -118258.8 
+        176549.8 -118258.8 176549.9 -118258.9 
+      )
+      (net A6 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        187997.8 -115603.7 187997.9 -115603.8 
+        187997.8 -115603.7 186459.9 -117141.6 
+        186459.9 -117141.6 177794.2 -117141.6 
+        177794.2 -117141.6 177794.2 -117141.5 
+      )
+      (net WE 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        178219.1 -116716.7 177794.2 -117141.6 
+        177794.2 -117141.6 177794.1 -117141.5 
+        173896.4 -112394.0 160683.8 -112394.0 
+        160683.8 -112394.0 160265.2 -112812.6 
+        160265.2 -112812.6 160265.1 -112812.5 
+      )
+      (net WE 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        169309.9 -121117.2 169310.0 -121117.2 
+        168127.5 -121648.7 168127.5 -121047.7 
+        47079.8 0.0 47079.7 0.1 
+        167101.8 -120622.9 167101.7 -120622.9 
+        167415.1 -121006.0 165499.5 -119090.4 
+        165499.5 -119090.4 165499.5 -118489.4 
+        165499.5 -118489.4 162439.6 -115429.5 
+        162439.6 -115429.5 161421.0 -115429.5 
+        161421.0 -115429.4 161421.0 -115429.5 
+      )
+      (net A9 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        165354.0 -123022.7 165354.0 -123022.6 
+        165354.0 -123022.7 166753.5 -123022.7 
+        166753.5 -123022.7 168127.5 -121648.7 
+        168127.5 -121648.7 168127.5 -121047.7 
+        169309.9 -121117.2 169310.0 -121117.2 
+      )
+      (net A9 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        168127.5 -121648.7 168127.5 -121047.7 
+        169309.9 -121117.2 169310.0 -121117.2 
+        169309.9 -121117.2 169310.0 -121117.3 
+      )
+      (net A9 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        185547.0 -120396.0 185547.1 -120396.0 
+        185547.0 -120396.0 185547.0 -120396.1 
+        0.0 -121721.3 0.1 -121721.3 
+      )
+      (net A9 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        182449.0 -121406.2 182449.1 -121406.1 
+        182449.0 -121406.2 182764.1 -121721.3 
+        182764.1 -121721.3 185547.0 -121721.3 
+        185547.0 -121721.3 185547.0 -121721.4 
+      )
+      (net A9 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        173675.5 -121232.5 173675.5 -121232.4 
+        173675.5 -121232.5 182275.3 -121232.5 
+        182275.3 -121232.5 182449.0 -121406.2 
+        182449.0 -121406.2 182448.9 -121406.3 
+      )
+      (net A9 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        169309.9 -121117.2 169309.8 -121117.1 
+        169309.9 -121117.2 169310.0 -121117.2 
+        173494.6 -121051.6 173675.5 -121232.5 
+        173675.5 -121232.5 173675.4 -121232.6 
+      )
+      (net A9 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        154252.5 -115090.5 154252.6 -115090.5 
+        154252.5 -115187.6 154252.5 -115015.7 
+        154252.5 -115015.7 153408.8 -114172.0 
+        153408.8 -114172.0 131903.5 -114172.0 
+        131903.5 -114172.0 129718.4 -116357.1 
+        129718.4 -116357.1 129718.4 -118279.8 
+        129718.4 -118279.8 129718.3 -118279.8 
+      )
+      (net A5 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        152281.4 -118081.7 152281.4 -118081.8 
+        152281.4 -118081.8 152281.5 -118081.7 
+        154252.5 -115187.6 154252.5 -115015.7 
+        154252.5 -115090.5 154252.6 -115090.5 
+      )
+      (net A5 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        154252.5 -115187.6 154252.5 -115015.7 
+        154252.5 -115090.5 154252.6 -115090.5 
+        158939.3 -115614.0 159884.6 -114668.7 
+        159884.6 -114668.7 170894.1 -114668.7 
+        170894.1 -114668.7 173770.6 -117545.2 
+        173770.6 -117545.2 173770.5 -117545.3 
+      )
+      (net A5 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        176657.0 -120396.0 176656.9 -120396.0 
+        176657.0 -120396.0 176657.0 -120395.9 
+        0.0 -119070.7 -0.1 -119070.7 
+      )
+      (net A5 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        173770.6 -117545.2 173770.6 -117545.1 
+        173770.6 -117545.2 174619.9 -117545.2 
+        176488.1 -119521.1 176488.2 -119521.2 
+        -0.1 -119070.7 0.0 -119070.7 
+        176657.0 -120395.9 176657.0 -120396.0 
+      )
+      (net A5 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        162814.0 -123698.0 162813.9 -123698.0 
+        162814.0 -123698.0 162814.0 -123697.9 
+        0.0 -123022.7 -0.1 -123022.7 
+      )
+      (net A8 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        180467.0 -120396.0 180467.1 -120396.0 
+        180467.0 -120396.0 180467.0 -120396.1 
+        0.0 -121721.3 0.1 -121721.3 
+      )
+      (net A8 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        167402.2 -121348.2 167402.3 -121348.1 
+        167402.2 -121348.2 168048.2 -121994.2 
+        168048.2 -121994.2 180194.1 -121994.2 
+        180194.1 -121994.2 180467.0 -121721.3 
+        180467.0 -121721.3 180467.1 -121721.4 
+      )
+      (net A8 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        162814.0 -123022.7 162813.9 -123022.6 
+        162814.0 -123022.7 164488.5 -121348.2 
+        164488.5 -121348.2 167402.2 -121348.2 
+        167402.2 -121348.2 167402.2 -121348.3 
+      )
+      (net A8 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        152654.0 -123698.0 152653.9 -123698.0 
+        152654.0 -123698.0 152654.0 -123697.9 
+        0.0 -123022.7 -0.1 -123022.7 
+      )
+      (net DQ3 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        141097.0 -120396.0 141096.9 -120396.0 
+        141097.0 -120396.0 141097.0 -120395.9 
+        0.0 -119070.7 -0.1 -119070.7 
+      )
+      (net DQ3 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        146306.3 -121480.4 146306.2 -121480.5 
+        146306.3 -121480.4 143896.5 -119070.6 
+        141097.0 -119070.7 141096.9 -119070.7 
+        141097.0 -119070.7 141096.9 -119070.6 
+      )
+      (net DQ3 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        152654.0 -123022.7 152654.0 -123022.8 
+        152654.0 -123022.7 147848.6 -123022.7 
+        147848.6 -123022.7 146306.3 -121480.4 
+        146306.3 -121480.4 146306.4 -121480.3 
+      )
+      (net DQ3 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        161290.0 -113284.0 161289.9 -113284.0 
+        161290.0 -113284.0 161290.0 -113283.9 
+        0.0 -111958.7 -0.1 -111958.7 
+      )
+      (net A9 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        147574.0 -123698.0 147573.9 -123698.0 
+        147574.0 -123698.0 147574.0 -123697.9 
+        0.0 -123022.7 -0.1 -123022.7 
+      )
+      (net A4 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        151257.0 -120396.0 151257.1 -120396.0 
+        151257.0 -120396.0 151257.0 -120396.1 
+        0.0 -121721.3 0.1 -121721.3 
+      )
+      (net A4 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        151257.0 -121721.3 151257.0 -121721.4 
+        151257.0 -121721.3 148875.4 -121721.3 
+        148875.4 -121721.3 147574.0 -123022.7 
+        147574.0 -123022.7 147573.9 -123022.6 
+      )
+      (net A4 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        127127.0 -120396.0 127127.1 -120396.0 
+        127127.0 -120396.0 127127.0 -120396.1 
+        0.0 -121721.3 0.1 -121721.3 
+      )
+      (net A4 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        127127.0 -121721.3 127127.0 -121721.2 
+        127127.0 -121721.3 128763.2 -121721.3 
+        128763.2 -121721.3 129213.6 -122171.7 
+        129213.6 -122171.7 144502.7 -122171.7 
+        144502.7 -122171.7 144994.7 -121679.7 
+        144994.7 -121679.7 144994.8 -121679.8 
+      )
+      (net A4 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        159452.8 -115225.8 153436.8 -115225.8 
+        159532.5 -115225.8 159532.6 -115225.9 
+        161420.9 -115429.5 161421.0 -115429.5 
+        161421.1 -115429.6 161421.0 -115429.5 
+      )
+      (net A9 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        161290.0 -111958.7 161290.0 -111958.8 
+        161290.0 -111958.7 159950.2 -111958.7 
+        160033.9 -111958.7 160033.8 -111958.8 
+        159532.5 -112376.4 159532.5 -115225.8 
+        159532.5 -115225.8 159532.4 -115225.8 
+      )
+      (net A9 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        137102.5 -114901.4 137102.4 -114901.3 
+        137102.5 -114901.4 137160.0 -114843.9 
+        137160.0 -114843.9 137160.0 -113284.0 
+        137160.0 -113284.0 137160.1 -113284.0 
+      )
+      (net A9 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        153670.0 -113284.0 153670.1 -113284.0 
+        153670.0 -113284.0 153670.0 -113284.1 
+        153670.0 -114496.7 153670.1 -114496.7 
+      )
+      (net A2 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        137414.0 -123135.3 137413.9 -123135.3 
+        137414.0 -123022.8 137414.0 -123022.6 
+        0.0 -123022.7 -0.1 -123022.7 
+      )
+      (net A2 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        137414.0 -123698.0 137413.9 -123698.0 
+        137414.0 -123698.0 137414.0 -123697.9 
+        137414.0 -123135.3 137413.9 -123135.3 
+      )
+      (net A2 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        129194.0 -111328.5 129194.1 -111328.4 
+        129194.0 -111328.5 129540.0 -111674.5 
+        129540.0 -111674.5 129540.0 -113284.0 
+        129540.0 -113284.0 129539.9 -113284.0 
+      )
+      (net A2 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        128488.2 -122838.2 128488.1 -122838.2 
+        128488.2 -122838.2 128488.2 -112034.3 
+        128488.2 -112034.3 129194.0 -111328.5 
+        129194.0 -111328.5 129194.1 -111328.6 
+      )
+      (net A2 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        137414.0 -123022.7 137414.0 -123022.8 
+        137414.0 -123022.7 128672.7 -123022.7 
+        128672.7 -123022.7 128488.2 -122838.2 
+        128488.2 -122838.2 128488.3 -122838.1 
+      )
+      (net A2 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        142240.0 -120396.0 142240.1 -120396.0 
+        142240.0 -120396.0 142240.0 -120396.1 
+        0.0 -121721.3 0.1 -121721.3 
+      )
+      (net GND 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        143560.5 -121087.9 143560.6 -121087.9 
+        143560.5 -121087.9 143560.4 -121088.0 
+        143560.5 -121721.3 142240.0 -121721.3 
+        142240.0 -121721.3 142240.0 -121721.2 
+      )
+      (net GND 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        140191.7 -118735.6 140191.8 -118735.6 
+        140191.7 -118735.6 140191.7 -118744.8 
+        140191.7 -118744.8 144469.6 -123022.7 
+        144469.6 -123022.7 145034.0 -123022.7 
+        145034.0 -123022.7 145034.0 -123022.8 
+      )
+      (net DQ2 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        132080.0 -113284.0 132079.9 -113284.0 
+        132080.0 -113284.0 132080.0 -113283.9 
+        0.0 -111958.7 -0.1 -111958.7 
+      )
+      (net A0 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        132403.8 -111328.5 132491.3 -111416.0 
+        128957.3 -114950.0 133208.9 -110698.4 
+        154424.4 -110887.4 154424.5 -110887.4 
+        154809.6 -110698.4 155565.7 -111454.5 
+        155565.7 -111454.5 155565.6 -111454.6 
+      )
+      (net A0 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        129794.0 -123698.0 129794.0 -123697.9 
+        129794.0 -123022.7 129793.9 -123022.6 
+        128957.3 -122861.3 128957.3 -114950.0 
+        128957.3 -114950.0 133208.9 -110698.4 
+        132403.8 -111328.5 132491.3 -111416.0 
+      )
+      (net A0 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        132403.8 -111328.5 132403.9 -111328.4 
+        132403.8 -111328.5 132491.3 -111416.0 
+        132491.3 -111416.0 132491.2 -111416.1 
+      )
+      (net A0 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        132080.0 -113284.0 132080.0 -113283.9 
+        132080.0 -111958.7 132080.1 -111958.6 
+        132403.8 -112960.2 132403.8 -111328.5 
+        132403.8 -111328.5 132403.9 -111328.5 
+      )
+      (net A0 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        129794.0 -123698.0 129793.9 -123698.0 
+        129794.0 -123698.0 129794.0 -123697.9 
+        0.0 -123022.7 -0.1 -123022.7 
+      )
+      (net A0 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        128397.0 -120396.0 128396.9 -120396.0 
+        128397.0 -120396.0 128397.0 -120395.9 
+        0.0 -119070.7 -0.1 -119070.7 
+      )
+      (net A5 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        129718.4 -118279.8 129718.4 -118279.9 
+        129718.4 -118279.8 129718.3 -118279.9 
+        0.0 -119070.7 -0.1 -119070.7 
+        128397.0 -120395.9 128397.0 -120396.0 
+      )
+      (net A5 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        135469.3 -117651.2 135469.4 -117651.3 
+        135469.3 -117651.2 135140.9 -117979.6 
+        135140.9 -117979.6 133427.8 -117979.6 
+        133427.8 -117979.6 133002.7 -117554.5 
+        133002.7 -117554.5 128395.1 -117554.5 
+        128395.1 -117554.5 127587.0 -118362.6 
+        127587.0 -118362.6 127228.3 -118362.6 
+        127228.3 -118362.6 124714.0 -120876.9 
+        124714.0 -120876.9 124714.0 -123698.0 
+        124714.0 -123698.0 124713.9 -123698.0 
+      )
+      (net CAS 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        129667.0 -119070.7 129667.0 -119070.6 
+        129667.0 -119070.7 129953.3 -119070.7 
+        130443.7 -118580.3 130443.8 -118580.2 
+        130443.7 -118318.0 132740.4 -118318.0 
+        132740.4 -118318.0 132740.4 -118318.1 
+      )
+      (net A6 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        129687.8 -115247.8 129687.9 -115247.7 
+        129707.5 -115267.5 129049.3 -114609.3 
+        129049.3 -114609.3 128270.0 -114609.3 
+        128270.0 -114609.3 128270.0 -114609.2 
+      )
+      (net A3 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        134330.5 -117229.6 134330.4 -117229.7 
+        134330.5 -117229.6 133560.0 -116459.1 
+        133560.0 -116459.1 131920.2 -116459.1 
+        131920.2 -116459.1 130708.9 -115247.8 
+        130708.9 -115247.8 129687.8 -115247.8 
+        129687.8 -115247.8 129687.8 -115247.7 
+      )
+      (net A3 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        146955.4 -112314.6 146955.5 -112314.7 
+        146955.4 -112314.6 145637.2 -113632.8 
+        145637.2 -113632.8 131302.8 -113632.8 
+        131302.8 -113632.8 129687.8 -115247.8 
+        129687.8 -115247.8 129687.7 -115247.7 
+      )
+      (net A3 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        190500.0 -113284.0 190500.1 -113284.0 
+        190500.0 -113284.0 190500.0 -113284.1 
+        0.0 -114609.3 0.1 -114609.3 
+      )
+      (net DP 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        193294.0 -123698.0 193293.9 -123698.0 
+        193294.0 -123698.0 193294.0 -116678.0 
+        190500.0 -114609.3 190499.9 -114609.2 
+        190500.0 -114609.3 190500.0 -114609.2 
+      )
+      (net DP 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        187960.0 -113284.0 187960.1 -113284.0 
+        187960.0 -113284.0 187960.0 -113284.1 
+        0.0 -114609.3 0.1 -114609.3 
+      )
+      (net RAS 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        188214.0 -123698.0 188214.0 -123697.9 
+        188214.0 -123698.0 188856.2 -123698.0 
+        188856.2 -123698.0 189628.1 -122926.1 
+        189628.1 -122926.1 190995.0 -122926.1 
+        190995.0 -122926.1 191454.5 -122466.6 
+        191454.5 -122466.6 191454.5 -119454.0 
+        191454.5 -119454.0 188428.8 -116428.3 
+        188428.8 -116428.3 186147.4 -116428.3 
+        187038.8 -115745.6 187038.7 -115745.5 
+        187232.3 -115745.6 187232.3 -115745.5 
+        187960.0 -114609.3 187960.1 -114609.2 
+        187960.0 -113284.1 187960.0 -113284.0 
+      )
+      (net RAS 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        189357.0 -121721.3 189357.1 -121721.3 
+        189357.0 -121721.3 189357.0 -122307.5 
+        189357.0 -122307.5 188641.8 -123022.7 
+        188641.8 -123022.7 185674.0 -123022.7 
+        185674.0 -123022.7 185674.0 -123022.6 
+      )
+      (net QP 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        145637.2 -113632.8 146955.4 -112314.6 
+        146955.4 -112314.6 146955.5 -112314.7 
+        167286.2 -113537.9 167286.3 -113537.9 
+        167286.2 -113538.0 167704.9 -113119.3 
+        167704.9 -113119.3 167705.0 -113119.4 
+      )
+      (net A3 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        176530.0 -113284.0 176529.9 -113284.0 
+        176530.0 -113284.0 176530.0 -113283.9 
+        0.0 -111958.7 -0.1 -111958.7 
+      )
+      (net A3 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        167704.9 -113119.3 167704.8 -113119.2 
+        167704.9 -113119.3 168865.6 -111958.6 
+        176530.0 -111958.7 176530.1 -111958.7 
+        176530.0 -111958.7 176529.9 -111958.8 
+      )
+      (net A3 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        137483.3 -117380.2 138180.2 -118077.1 
+        138180.2 -118077.1 138180.3 -118077.0 
+        137999.4 -117525.7 146439.7 -117525.7 
+        146439.7 -117525.7 148184.6 -119270.6 
+        148184.6 -119270.6 158208.7 -119270.6 
+        158434.0 -119045.3 158622.0 -118857.3 
+        158622.0 -118857.3 158622.1 -118857.4 
+      )
+      (net CAS 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        162687.0 -120396.0 162686.9 -120396.0 
+        162687.0 -120396.0 162687.0 -120395.9 
+        0.0 -119070.7 -0.1 -119070.7 
+      )
+      (net CAS 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        158622.0 -118857.3 158622.1 -118857.2 
+        158622.0 -118857.3 158835.4 -119070.7 
+        158835.4 -119070.7 162687.0 -119070.7 
+        162687.0 -119070.7 162687.0 -119070.8 
+      )
+      (net CAS 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        138180.1 -118077.2 138180.2 -118077.1 
+        138180.2 -118077.1 137483.3 -117380.2 
+        135470.2 -117651.2 135469.3 -117651.2 
+        135469.3 -117651.2 135469.3 -117651.1 
+      )
+      (net CAS 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        147320.0 -115590.0 147320.0 -115589.9 
+        147320.0 -115590.0 147320.1 -115590.0 
+        148270.3 0.0 148270.3 0.1 
+      )
+      (net "Net-(C2-Pad1)" 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        151130.0 -113284.0 151130.1 -113284.0 
+        151130.0 -113284.0 151130.0 -113284.1 
+        0.0 -114609.3 0.1 -114609.3 
+      )
+      (net "Net-(C2-Pad1)" 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        151130.0 -114609.3 151130.0 -114609.4 
+        151130.0 -114609.3 148300.7 -114609.3 
+        148270.3 -115590.0 148270.2 -115590.1 
+        147320.1 -115590.0 147320.0 -115590.0 
+      )
+      (net "Net-(C2-Pad1)" 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        139700.0 -113284.0 139699.9 -113284.0 
+        139700.0 -113284.0 139700.0 -113283.9 
+        0.0 -111958.7 -0.1 -111958.7 
+      )
+      (net WE 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        149922.8 -112748.3 149922.9 -112748.4 
+        149922.8 -112748.3 149625.7 -113045.4 
+        149625.7 -113045.4 145684.5 -113045.4 
+        145684.5 -113045.4 144597.7 -111958.6 
+        139700.0 -111958.7 139699.9 -111958.7 
+        139700.0 -111958.7 139699.9 -111958.6 
+      )
+      (net WE 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        160265.2 -112812.6 160265.2 -112812.7 
+        152973.6 -112812.6 149987.1 -112812.6 
+        149987.1 -112812.6 149922.8 -112748.3 
+        149922.8 -112748.3 149922.9 -112748.2 
+      )
+      (net WE 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        132133.3 -115646.5 132133.3 -115165.6 
+        132686.4 -115718.7 131577.0 -114609.3 
+        131577.0 -114609.3 130810.0 -114609.3 
+        130810.0 -114609.3 130810.0 -114609.2 
+      )
+      (net A1 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        132133.3 -115646.5 132133.2 -115646.5 
+        132133.3 -115646.5 132133.3 -115165.6 
+        132133.3 -115165.6 132133.4 -115165.6 
+      )
+      (net A1 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        132133.3 -115646.5 132133.3 -115165.6 
+        132133.3 -115165.6 132133.4 -115165.6 
+        135178.8 -112265.7 135178.9 -112265.6 
+        135178.8 -112265.7 135178.9 -112265.7 
+      )
+      (net A1 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        135178.8 -112265.7 135178.7 -112265.6 
+        135178.8 -112265.7 136095.4 -111349.1 
+        147680.8 -111575.6 147680.9 -111575.6 
+        153397.0 -111349.1 153699.0 -111651.1 
+        153699.0 -111651.1 153698.9 -111651.2 
+      )
+      (net A1 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        138430.0 -111958.7 138429.9 -111958.6 
+        138430.0 -111958.7 139690.3 -110698.4 
+        139690.3 -110698.4 162239.9 -110698.4 
+        162560.0 -111958.7 162560.1 -111958.8 
+        163030.1 -111488.6 162560.0 -111958.7 
+      )
+      (net RAS 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        138430.0 -113284.0 138429.9 -113284.0 
+        138430.0 -113284.0 138430.0 -113283.9 
+        0.0 -111958.7 -0.1 -111958.7 
+      )
+      (net RAS 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        187960.0 -111958.7 187959.9 -111958.8 
+        187960.0 -111958.7 187489.9 -111488.6 
+        187489.9 -111488.6 163030.1 -111488.6 
+        163030.1 -111488.6 162560.0 -111958.7 
+        162560.0 -111958.7 162559.9 -111958.6 
+      )
+      (net RAS 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        162560.0 -113284.0 162559.9 -113284.0 
+        162560.0 -113284.0 162560.0 -113283.9 
+        0.0 -111958.7 -0.1 -111958.7 
+      )
+      (net RAS 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        187960.0 -113284.0 187959.9 -113284.0 
+        187960.0 -113284.0 187960.0 -113283.9 
+        0.0 -111958.7 -0.1 -111958.7 
+      )
+      (net RAS 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        166370.0 -119070.7 166369.9 -119070.6 
+        166370.0 -119070.7 166370.0 -119070.6 
+        166224.8 -118790.0 166224.7 -118789.9 
+        166224.8 -118790.0 166224.8 -118789.9 
+      )
+      (net GND 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        163830.0 -113284.0 163830.1 -113284.0 
+        163830.0 -113284.0 163830.0 -113284.1 
+        0.0 -114609.3 0.1 -114609.3 
+      )
+      (net WE 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        160265.2 -112812.6 160265.3 -112812.6 
+        160265.2 -112812.6 160265.2 -114136.7 
+        160265.2 -114136.7 160785.2 -114656.7 
+        163830.0 -114609.3 163830.1 -114609.3 
+        163830.0 -114609.3 163830.1 -114609.4 
+      )
+      (net WE 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        132334.0 -123698.0 132333.9 -123698.0 
+        132334.0 -123698.0 132334.0 -123697.9 
+        0.0 -123022.7 -0.1 -123022.7 
+      )
+      (net A1 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        143234.9 -115581.1 143235.0 -115581.2 
+        143234.9 -115581.1 143140.9 -115675.1 
+        143140.9 -115675.1 136808.8 -115675.1 
+        136808.8 -115675.1 136054.9 -114921.2 
+        136054.9 -114921.2 131832.9 -114921.2 
+        131832.9 -114921.2 130822.8 -115931.3 
+        130822.8 -115931.3 130822.8 -116397.1 
+        130822.8 -116397.1 130822.7 -116397.1 
+      )
+      (net DQ0 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        132334.0 -123698.0 132334.0 -123697.9 
+        132334.0 -123022.7 132333.9 -123022.6 
+        131996.1 -116342.7 131996.1 -116342.6 
+        131584.6 -116195.2 132133.3 -115646.5 
+        132133.3 -115646.5 132133.4 -115646.6 
+      )
+      (net A1 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        165227.0 -120396.0 165227.1 -120396.0 
+        165227.0 -120396.0 165227.0 -120396.1 
+        0.0 -121721.3 0.1 -121721.3 
+      )
+      (net DQ7 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        183134.0 -123698.0 183133.9 -123698.0 
+        183134.0 -123698.0 183134.0 -123697.9 
+        0.0 -123022.7 -0.1 -123022.7 
+      )
+      (net DQ7 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        183134.0 -123022.7 183133.9 -123022.8 
+        183134.0 -123022.7 182683.6 -122572.3 
+        182683.6 -122572.3 166078.0 -122572.3 
+        166078.0 -122572.3 165227.0 -121721.3 
+        165227.0 -121721.3 165227.1 -121721.2 
+      )
+      (net DQ7 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        154940.0 -113284.0 154939.9 -113284.0 
+        154940.0 -113284.0 154940.0 -113283.9 
+        0.0 -111958.7 -0.1 -111958.7 
+      )
+      (net A1 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        156210.0 -113284.0 156209.9 -113284.0 
+        156210.0 -113284.0 156210.0 -113283.9 
+        0.0 -111958.7 -0.1 -111958.7 
+      )
+      (net A0 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        155565.7 -111454.5 155565.7 -111454.4 
+        155565.7 -111454.5 155565.8 -111454.6 
+        -0.1 -111958.7 0.0 -111958.7 
+        156210.0 -113283.9 156210.0 -113284.0 
+      )
+      (net A0 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        181059.2 -115276.2 181059.3 -115276.1 
+        181059.3 -115276.1 180580.1 -114796.9 
+        155565.7 -111454.5 155565.6 -111454.5 
+        155565.7 -111454.5 155565.6 -111454.4 
+      )
+      (net A0 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        178437.9 -115071.7 178437.8 -115071.8 
+        178437.9 -115071.7 175279.4 -111913.2 
+        175279.4 -111913.2 157027.5 -111913.2 
+        157027.5 -111913.2 156742.3 -112198.4 
+        156742.3 -112198.4 154246.3 -112198.4 
+        154246.3 -112198.4 153699.0 -111651.1 
+        153699.0 -111651.1 153699.1 -111651.0 
+      )
+      (net A1 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        153699.0 -111651.1 153699.0 -111651.0 
+        153699.0 -111651.1 154632.4 -111651.1 
+        154632.4 -111651.1 154940.0 -111958.7 
+        154940.0 -111958.7 154939.9 -111958.8 
+      )
+      (net A1 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        152400.0 -113284.0 152399.9 -113284.0 
+        152400.0 -113284.0 152400.0 -113283.9 
+        0.0 -111958.7 -0.1 -111958.7 
+      )
+      (net A3 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        146955.4 -112314.6 146955.3 -112314.5 
+        146955.4 -112314.6 147311.4 -111958.6 
+        152400.0 -111958.7 152400.1 -111958.7 
+        152400.0 -111958.7 152399.9 -111958.8 
+      )
+      (net A3 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        172974.0 -123698.0 172973.9 -123698.0 
+        172974.0 -123698.0 172974.0 -123697.9 
+        0.0 -123022.7 -0.1 -123022.7 
+      )
+      (net WE 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        189230.0 -113284.0 189230.1 -113284.0 
+        189230.0 -113284.0 189230.0 -113284.1 
+        0.0 -114609.3 0.1 -114609.3 
+      )
+      (net WE 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        187997.8 -115603.7 187997.8 -115603.8 
+        187997.8 -115603.7 187997.9 -115603.6 
+        0.0 -114609.3 0.1 -114609.3 
+        189230.0 -113284.1 189230.0 -113284.0 
+      )
+      (net WE 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        165353.4 -115435.0 165353.5 -115434.9 
+        170139.6 -120221.2 170139.7 -120221.3 
+        170434.0 -120221.2 170434.0 -123698.0 
+        170434.0 -123698.0 170433.9 -123698.0 
+      )
+      (net DQ5 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        171450.0 -118090.0 171450.0 -118090.1 
+        171450.0 -118090.0 171449.9 -118090.0 
+        170499.7 0.0 170499.7 -0.1 
+      )
+      (net +5V 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        170180.2 -118142.7 170180.2 -118142.6 
+        170180.2 -118142.7 171397.3 -118142.7 
+        170499.7 -118090.0 170499.8 -118089.9 
+        171449.9 -118090.0 171450.0 -118090.0 
+      )
+      (net +5V 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        165354.0 -123698.0 165353.9 -123698.0 
+        165354.0 -123698.0 165354.0 -123697.9 
+        0.0 -123022.7 -0.1 -123022.7 
+      )
+      (net A9 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        155067.0 -120396.0 155067.1 -120396.0 
+        155067.0 -120396.0 155067.0 -120396.1 
+        0.0 -121721.3 0.1 -121721.3 
+      )
+      (net A7 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        157734.0 -123698.0 157733.9 -123698.0 
+        157734.0 -123698.0 157734.0 -123697.9 
+        0.0 -123022.7 -0.1 -123022.7 
+      )
+      (net A7 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        157734.0 -123022.7 157734.0 -123022.8 
+        157734.0 -123022.7 156368.4 -123022.7 
+        156368.4 -123022.7 155067.0 -121721.3 
+        155067.0 -121721.3 155067.1 -121721.2 
+      )
+      (net A7 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        130937.0 -120396.0 130937.1 -120396.0 
+        130937.0 -120396.0 130937.0 -120396.1 
+        0.0 -121721.3 0.1 -121721.3 
+      )
+      (net A7 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        142240.0 -114609.3 142240.0 -114609.2 
+        142240.0 -114609.3 142263.1 -114609.3 
+        142263.1 -114609.3 143234.9 -115581.1 
+        143234.9 -115581.1 143234.8 -115581.2 
+      )
+      (net DQ0 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        133413.8 -120082.0 133413.7 -120081.9 
+        133413.8 -120082.0 133509.3 -119986.5 
+        133509.3 -119986.5 133509.3 -116982.0 
+        133509.3 -116982.0 134012.4 -116478.9 
+        134012.4 -116478.9 135322.9 -116478.9 
+        135322.9 -116478.9 135600.7 -116756.7 
+        146571.3 -116756.7 146571.4 -116756.7 
+        146588.2 -116739.8 148668.6 -118820.2 
+        148668.6 -118820.2 154992.4 -118820.2 
+        154992.4 -118820.2 155398.3 -118414.3 
+        155398.3 -118414.3 155398.4 -118414.4 
+      )
+      (net A7 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        132740.4 -118318.0 132740.3 -118318.0 
+        132740.4 -118318.0 132740.4 -117114.0 
+        132740.4 -117114.0 133825.9 -116028.5 
+        133825.9 -116028.5 136525.3 -116028.5 
+        136525.3 -116028.5 136803.2 -116306.4 
+        147753.9 -116306.4 147754.0 -116306.4 
+        147779.4 -116280.9 149329.2 -117830.7 
+        149329.2 -117830.7 149329.1 -117830.8 
+      )
+      (net A6 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        157595.2 -121133.9 157595.2 -121134.0 
+        157595.2 -121133.9 147965.6 -121133.9 
+        144545.8 -117714.0 144545.7 -117713.9 
+        144959.8 -117995.9 144959.7 -117995.9 
+        140187.6 -117714.0 139060.1 -118841.5 
+        139060.1 -118841.5 136911.1 -118841.5 
+        136911.1 -118841.5 136692.4 -118622.8 
+        136692.4 -118622.8 136692.5 -118622.7 
+      )
+      (net A8 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        155067.0 -120396.0 155066.9 -120396.0 
+        155067.0 -120396.0 155067.0 -120395.9 
+        0.0 -119070.7 -0.1 -119070.7 
+      )
+      (net A7 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        155398.3 -118414.3 155398.4 -118414.3 
+        155398.3 -118414.3 155398.3 -120064.7 
+        155067.0 -119070.7 155066.9 -119070.8 
+        155067.0 -120395.9 155067.0 -120396.0 
+      )
+      (net A7 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        145034.0 -123698.0 145033.9 -123698.0 
+        145034.0 -123698.0 145034.0 -123697.9 
+        0.0 -123022.7 -0.1 -123022.7 
+      )
+      (net DQ2 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        136692.4 -118622.8 136692.5 -118622.9 
+        136692.4 -118622.8 135490.4 -119824.8 
+        135490.4 -119824.8 134139.1 -119824.8 
+        134139.1 -119781.5 133428.3 -119070.7 
+        133428.3 -119070.7 132207.0 -119070.7 
+        132207.0 -119070.7 132207.0 -119070.6 
+      )
+      (net A8 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        130937.0 -120396.0 130937.0 -120396.1 
+        0.0 -121721.3 0.1 -121721.3 
+        132787.7 -121721.3 132787.8 -121721.2 
+        133413.8 -121239.9 133413.8 -120082.0 
+        133413.8 -120082.0 133413.9 -120082.0 
+      )
+      (net A7 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        179197.0 -120396.0 179196.9 -120396.0 
+        179197.0 -120396.0 179197.0 -120395.9 
+        0.0 -119070.7 -0.1 -119070.7 
+      )
+      (net A7 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        127254.0 -123698.0 127253.9 -123698.0 
+        127254.0 -123698.0 127254.0 -123697.9 
+        0.0 -123022.7 -0.1 -123022.7 
+      )
+      (net DQ0 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        142240.0 -113284.0 142240.1 -113284.0 
+        142240.0 -113284.0 142240.0 -113284.1 
+        0.0 -114609.3 0.1 -114609.3 
+      )
+      (net DQ0 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        127286.5 -117637.3 127286.4 -117637.2 
+        127286.5 -117637.3 128526.7 -116397.1 
+        128526.7 -116397.1 130822.8 -116397.1 
+        130822.8 -116397.1 130822.8 -116397.2 
+      )
+      (net DQ0 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        127254.0 -123698.0 127254.0 -123697.9 
+        127254.0 -123022.7 127254.1 -123022.6 
+        127286.5 -123665.5 127286.5 -117637.3 
+        127286.5 -117637.3 127286.6 -117637.3 
+      )
+      (net DQ0 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        130810.0 -113284.0 130810.1 -113284.0 
+        130810.0 -113284.0 130810.0 -113284.1 
+        0.0 -114609.3 0.1 -114609.3 
+      )
+      (net A1 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        163957.0 -120396.0 163957.1 -120396.0 
+        163957.0 -120396.0 163957.0 -120396.1 
+        0.0 -121721.3 0.1 -121721.3 
+      )
+      (net DQ6 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        178054.0 -123698.0 178053.9 -123698.0 
+        178054.0 -123698.0 178054.0 -123697.9 
+        0.0 -123022.7 -0.1 -123022.7 
+      )
+      (net DQ6 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        178054.0 -123022.7 178054.0 -123022.8 
+        178054.0 -123022.7 165258.4 -123022.7 
+        165258.4 -123022.7 163957.0 -121721.3 
+        163957.0 -121721.3 163957.1 -121721.2 
+      )
+      (net DQ6 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        165353.4 -115435.0 165353.3 -115435.1 
+        165353.4 -115435.0 165100.0 -115181.6 
+        165100.0 -115181.6 165100.0 -113284.0 
+        165100.0 -113284.0 165100.1 -113284.0 
+      )
+      (net DQ5 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        190500.1 -120396.0 190500.0 -120396.0 
+        190500.0 -120396.0 190500.0 -121968.2 
+        190725.3 -122104.2 190725.4 -122104.3 
+        190725.3 -122104.2 190725.3 -122104.3 
+      )
+      (net GND 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        188087.0 -120396.0 188087.0 -120396.1 
+        0.0 -121721.3 0.1 -121721.3 
+        188214.1 -121721.4 188607.6 -122114.9 
+        188529.5 -122036.8 188529.6 -122036.7 
+      )
+      (net CASP 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        190754.0 -123022.7 190754.0 -123022.8 
+        190754.0 -123022.7 189515.4 -123022.7 
+        188607.6 -122114.9 188529.5 -122036.8 
+        188529.5 -122036.8 188529.6 -122036.7 
+      )
+      (net CASP 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        153797.0 -120396.0 153797.1 -120396.0 
+        153797.0 -120396.0 153797.0 -120396.1 
+        0.0 -121721.3 0.1 -121721.3 
+      )
+      (net A6 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        155194.0 -123698.0 155193.9 -123698.0 
+        155194.0 -123698.0 155194.0 -123697.9 
+        0.0 -123022.7 -0.1 -123022.7 
+      )
+      (net A6 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        155194.0 -123698.0 155194.0 -123697.9 
+        155194.0 -123022.7 155193.9 -123022.6 
+        0.1 -121721.3 0.0 -121721.3 
+        153797.0 -120396.1 153797.0 -120396.0 
+      )
+      (net A6 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        139827.0 -120396.0 139826.9 -120396.0 
+        139827.0 -120396.0 139827.0 -120395.9 
+        0.0 -119070.7 -0.1 -119070.7 
+      )
+      (net DQ2 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        140191.7 -118735.6 140191.8 -118735.7 
+        140191.7 -118735.6 139827.0 -119100.3 
+        0.0 -119070.7 -0.1 -119070.7 
+        139827.0 -120395.9 139827.0 -120396.0 
+      )
+      (net DQ2 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        140970.0 -113284.0 140970.1 -113284.0 
+        140970.0 -113284.0 140970.0 -113284.1 
+        0.0 -114609.3 0.1 -114609.3 
+      )
+      (net DQ1 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        134874.0 -123698.0 134873.9 -123698.0 
+        134874.0 -123698.0 134874.0 -123697.9 
+        0.0 -123022.7 -0.1 -123022.7 
+      )
+      (net DQ1 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        134565.3 -119095.3 134565.3 -119095.2 
+        134565.3 -119095.3 135122.9 -119095.3 
+        135122.9 -119095.3 139608.9 -114609.3 
+        139608.9 -114609.3 140970.0 -114609.3 
+        140970.0 -114609.3 140970.0 -114609.4 
+      )
+      (net DQ1 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        134330.5 -117229.6 134330.6 -117229.6 
+        134330.5 -117229.6 134330.5 -117538.1 
+        134330.5 -117538.1 139815.1 -123022.7 
+        139815.1 -123022.7 139954.0 -123022.7 
+        139954.0 -123022.7 139954.0 -123022.8 
+      )
+      (net A3 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        134874.0 -123022.7 134874.1 -123022.6 
+        134874.0 -123022.7 134874.0 -123022.6 
+        134963.0 -119493.0 134565.3 -119095.3 
+        134565.3 -119095.3 134565.4 -119095.2 
+      )
+      (net DQ1 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        139954.0 -123698.0 139953.9 -123698.0 
+        139954.0 -123698.0 139954.0 -123697.9 
+        0.0 -123022.7 -0.1 -123022.7 
+      )
+      (net A3 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        129667.0 -120396.0 129666.9 -120396.0 
+        129667.0 -120396.0 129667.0 -120395.9 
+        0.0 -119070.7 -0.1 -119070.7 
+      )
+      (net A6 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        180340.0 -113284.0 180340.1 -113284.0 
+        180340.0 -113284.0 180340.0 -113284.1 
+        0.0 -114609.3 0.1 -114609.3 
+      )
+      (net A0 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        181059.3 -115276.1 181059.2 -115276.2 
+        181059.3 -115276.1 180340.0 -114556.8 
+        0.1 -114609.3 0.0 -114609.3 
+        180340.0 -113284.1 180340.0 -113284.0 
+      )
+      (net A0 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        179070.0 -113284.0 179070.1 -113284.0 
+        179070.0 -113284.0 179070.0 -113284.1 
+        0.0 -114609.3 0.1 -114609.3 
+      )
+      (net A1 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        178437.9 -115071.7 178437.9 -115071.6 
+        178437.9 -115071.7 178438.0 -115071.6 
+        0.0 -114609.3 0.1 -114609.3 
+        179070.0 -113284.1 179070.0 -113284.0 
+      )
+      (net A1 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        166370.0 -113284.0 166370.1 -113284.0 
+        166370.0 -113284.0 166370.0 -115708.3 
+        166147.5 -115708.3 166147.4 -115708.4 
+        162207.7 -116248.5 162207.6 -116248.5 
+        162207.7 -116248.5 162207.8 -116248.4 
+      )
+      (net DQ4 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        160274.0 -123698.0 160274.0 -123697.9 
+        -0.1 -123022.7 0.0 -123022.7 
+        160105.2 -123698.0 160105.3 -123697.9 
+        162207.7 -117847.0 162207.7 -115591.3 
+        162207.7 -116248.5 162207.6 -116248.5 
+      )
+      (net DQ4 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        162814.0 -123698.0 162813.9 -123698.0 
+        162814.0 -123698.0 162814.0 -123697.9 
+        0.0 -123022.7 -0.1 -123022.7 
+      )
+      (net A8 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        162814.0 -123022.7 162814.0 -123022.8 
+        162814.0 -123022.7 159484.0 -123022.7 
+        159484.0 -123022.7 157595.2 -121133.9 
+        157595.2 -121133.9 157595.3 -121133.8 
+      )
+      (net A8 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        160274.0 -123698.0 160273.9 -123698.0 
+        160274.0 -123698.0 160274.0 -123697.9 
+        0.0 -123022.7 -0.1 -123022.7 
+      )
+      (net DQ4 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        152527.0 -119070.7 152526.9 -119070.8 
+        152527.0 -119070.7 152257.9 -118801.6 
+        152281.4 -118081.8 152281.4 -118081.7 
+        152257.8 -118081.8 152281.4 -118081.8 
+      )
+      (net A5 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        153797.0 -120396.0 153796.9 -120396.0 
+        153797.0 -120396.0 153797.0 -120395.9 
+        0.0 -119070.7 -0.1 -119070.7 
+      )
+      (net A6 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        152527.0 -120396.0 152527.1 -120396.0 
+        152527.0 -120396.0 152527.0 -120396.1 
+        0.0 -121721.3 0.1 -121721.3 
+      )
+      (net A5 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        150114.0 -123698.0 150113.9 -123698.0 
+        150114.0 -123698.0 150114.0 -123697.9 
+        0.0 -123022.7 -0.1 -123022.7 
+      )
+      (net A5 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        150114.0 -123022.7 150114.0 -123022.6 
+        150114.0 -123022.7 151225.6 -123022.7 
+        151225.6 -123022.7 152527.0 -121721.3 
+        152527.0 -121721.3 152527.1 -121721.4 
+      )
+      (net A5 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        138180.2 -118077.1 138180.3 -118077.1 
+        138180.2 -118077.1 138180.2 -118693.9 
+        138180.2 -118693.9 138557.0 -119070.7 
+        138557.0 -119070.7 138556.9 -119070.8 
+      )
+      (net CAS 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        132207.0 -120396.0 132206.9 -120396.0 
+        132207.0 -120396.0 132207.0 -120395.9 
+        0.0 -119070.7 -0.1 -119070.7 
+      )
+      (net A8 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        156337.0 -121002.3 156337.0 -121002.2 
+        156337.0 -121002.3 157463.6 -121002.3 
+        157463.6 -121002.3 157595.2 -121133.9 
+        157595.2 -121133.9 157595.1 -121134.0 
+      )
+      (net A8 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        156337.0 -120396.0 156337.1 -120396.0 
+        156337.0 -120396.0 156337.0 -120396.1 
+        156337.0 -121002.3 157463.6 -121002.3 
+      )
+      (net A8 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        137287.0 -120396.0 137287.1 -120396.0 
+        137287.0 -120396.0 137287.0 -120396.1 
+        0.0 -121721.3 0.1 -121721.3 
+      )
+      (net GND 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        135955.3 -121373.4 135955.4 -121373.3 
+        135955.3 -121373.4 136303.2 -121721.3 
+        136303.2 -121721.3 137287.0 -121721.3 
+        137287.0 -121721.3 137287.0 -121721.4 
+      )
+      (net GND 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        147320.0 -119165.3 147320.1 -119165.3 
+        147320.0 -119165.3 147320.0 -119460.9 
+        147320.0 -119460.9 147354.5 -119495.4 
+        147354.5 -119495.4 147354.4 -119495.5 
+      )
+      (net +5V 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        138557.0 -120396.0 138556.9 -120396.0 
+        138557.0 -120396.0 138557.0 -120395.9 
+        0.0 -119070.7 -0.1 -119070.7 
+      )
+      (net CAS 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        152527.0 -120396.0 152526.9 -120396.0 
+        152527.0 -120396.0 152527.0 -120395.9 
+        0.0 -119070.7 -0.1 -119070.7 
+      )
+      (net A5 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        161417.0 -121721.3 161417.0 -121721.4 
+        161417.0 -121721.3 161016.0 -121721.3 
+        161016.0 -121721.3 160665.0 -122072.3 
+        160665.0 -122072.3 160664.9 -122072.2 
+      )
+      (net GND 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        161417.0 -120396.0 161417.1 -120396.0 
+        161417.0 -120396.0 161417.0 -120396.1 
+        0.0 -121721.3 0.1 -121721.3 
+      )
+      (net GND 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        128270.0 -113284.0 128270.1 -113284.0 
+        128270.0 -113284.0 128270.0 -113284.1 
+        0.0 -114609.3 0.1 -114609.3 
+      )
+      (net A3 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        166370.0 -120396.0 166369.9 -120396.0 
+        166370.0 -120396.0 166370.0 -120395.9 
+        0.0 -119070.7 -0.1 -119070.7 
+      )
+      (net GND 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        188087.0 -120396.0 188087.1 -120396.0 
+        188087.0 -120396.0 188087.0 -120396.1 
+        0.0 -121721.3 0.1 -121721.3 
+      )
+      (net CASP 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        147320.0 -118090.0 147320.1 -118090.0 
+        147320.0 -118090.0 147320.0 -118090.1 
+        0.0 -119165.3 0.1 -119165.3 
+      )
+      (net +5V 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        123190.0 -115590.0 123190.0 -115589.9 
+        123190.0 -115590.0 123190.1 -115590.0 
+        124140.3 0.0 124140.3 0.1 
+      )
+      (net "Net-(C1-Pad1)" 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        127000.0 -113284.0 127000.1 -113284.0 
+        127000.0 -113284.0 127000.0 -113284.1 
+        0.0 -114609.3 0.1 -114609.3 
+      )
+      (net "Net-(C1-Pad1)" 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        127000.0 -114609.3 127000.0 -114609.4 
+        125992.9 -114609.3 125992.8 -114609.3 
+        124140.3 -115590.0 124140.2 -115590.1 
+        123190.1 -115590.0 123190.0 -115590.0 
+      )
+      (net "Net-(C1-Pad1)" 1)
+      (clearance_class "kicad_default")
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        190754.0 -123698.0 190753.9 -123698.0 
+        190754.0 -123698.0 190754.0 -123697.9 
+        0.0 -123022.7 -0.1 -123022.7 
+      )
+      (net CASP 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        189357.0 -120396.0 189357.1 -120396.0 
+        189357.0 -120396.0 189357.0 -120396.1 
+        0.0 -121721.3 0.1 -121721.3 
+      )
+      (net QP 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        185674.0 -123698.0 185673.9 -123698.0 
+        185674.0 -123698.0 185674.0 -123697.9 
+        0.0 -123022.7 -0.1 -123022.7 
+      )
+      (net QP 1)
+      (clearance_class "kicad_default")
+      (type shove_fixed)
+    )
+    (via "Via[0-3]_800:400_um" 161418.4 -118339.7
+      (net A4 1)
+      (clearance_class "kicad_default")
+    )
+    (via "Via[0-3]_800:400_um" 175171.6 -115704.4
+      (net A2 1)
+      (clearance_class "kicad_default")
+    )
+    (via "Via[0-3]_800:400_um" 158141.0 -114314.2
+      (net A2 1)
+      (clearance_class "kicad_default")
+    )
+    (via "Via[0-3]_800:400_um" 124728.1 -118582.8
+      (net +5V 1)
+      (clearance_class "kicad_default")
+    )
+    (via "Via[0-3]_800:400_um" 176549.8 -118258.8
+      (net A6 1)
+      (clearance_class "kicad_default")
+    )
+    (via "Via[0-3]_800:400_um" 168926.6 -116872.7
+      (net A6 1)
+      (clearance_class "kicad_default")
+    )
+    (via "Via[0-3]_800:400_um" 182449.0 -121406.2
+      (net A9 1)
+      (clearance_class "kicad_default")
+    )
+    (via "Via[0-3]_800:400_um" 173675.5 -121232.5
+      (net A9 1)
+      (clearance_class "kicad_default")
+    )
+    (via "Via[0-3]_800:400_um" 169309.9 -121117.2
+      (net A9 1)
+      (clearance_class "kicad_default")
+    )
+    (via "Via[0-3]_800:400_um" 173770.6 -117545.2
+      (net A5 1)
+      (clearance_class "kicad_default")
+    )
+    (via "Via[0-3]_800:400_um" 167402.2 -121348.2
+      (net A8 1)
+      (clearance_class "kicad_default")
+    )
+    (via "Via[0-3]_800:400_um" 146306.3 -121480.4
+      (net DQ3 1)
+      (clearance_class "kicad_default")
+    )
+    (via "Via[0-3]_800:400_um" 144994.7 -121679.7
+      (net A4 1)
+      (clearance_class "kicad_default")
+    )
+    (via "Via[0-3]_800:400_um" 137102.5 -114901.4
+      (net A9 1)
+      (clearance_class "kicad_default")
+    )
+    (via "Via[0-3]_800:400_um" 153436.4 -115226.2
+      (net A9 1)
+      (clearance_class "kicad_default")
+    )
+    (via "Via[0-3]_800:400_um" 129194.0 -111328.5
+      (net A2 1)
+      (clearance_class "kicad_default")
+    )
+    (via "Via[0-3]_800:400_um" 128488.2 -122838.2
+      (net A2 1)
+      (clearance_class "kicad_default")
+    )
+    (via "Via[0-3]_800:400_um" 143560.5 -121087.9
+      (net GND 1)
+      (clearance_class "kicad_default")
+    )
+    (via "Via[0-3]_800:400_um" 132403.8 -111328.5
+      (net A0 1)
+      (clearance_class "kicad_default")
+    )
+    (via "Via[0-3]_800:400_um" 129718.4 -118279.8
+      (net A5 1)
+      (clearance_class "kicad_default")
+    )
+    (via "Via[0-3]_800:400_um" 167704.9 -113119.3
+      (net A3 1)
+      (clearance_class "kicad_default")
+    )
+    (via "Via[0-3]_800:400_um" 158622.0 -118857.3
+      (net CAS 1)
+      (clearance_class "kicad_default")
+    )
+    (via "Via[0-3]_800:400_um" 149922.8 -112748.3
+      (net WE 1)
+      (clearance_class "kicad_default")
+    )
+    (via "Via[0-3]_800:400_um" 135178.8 -112265.7
+      (net A1 1)
+      (clearance_class "kicad_default")
+    )
+    (via "Via[0-3]_800:400_um" 160265.2 -112812.6
+      (net WE 1)
+      (clearance_class "kicad_default")
+    )
+    (via "Via[0-3]_800:400_um" 132133.3 -115646.5
+      (net A1 1)
+      (clearance_class "kicad_default")
+    )
+    (via "Via[0-3]_800:400_um" 155565.7 -111454.5
+      (net A0 1)
+      (clearance_class "kicad_default")
+    )
+    (via "Via[0-3]_800:400_um" 153699.0 -111651.1
+      (net A1 1)
+      (clearance_class "kicad_default")
+    )
+    (via "Via[0-3]_800:400_um" 146955.4 -112314.6
+      (net A3 1)
+      (clearance_class "kicad_default")
+    )
+    (via "Via[0-3]_800:400_um" 129687.8 -115247.8
+      (net A3 1)
+      (clearance_class "kicad_default")
+    )
+    (via "Via[0-3]_800:400_um" 187997.8 -115603.7
+      (net WE 1)
+      (clearance_class "kicad_default")
+    )
+    (via "Via[0-3]_800:400_um" 170180.2 -118142.7
+      (net +5V 1)
+      (clearance_class "kicad_default")
+    )
+    (via "Via[0-3]_800:400_um" 161421.0 -115429.5
+      (net A9 1)
+      (clearance_class "kicad_default")
+    )
+    (via "Via[0-3]_800:400_um" 155398.3 -118414.3
+      (net A7 1)
+      (clearance_class "kicad_default")
+    )
+    (via "Via[0-3]_800:400_um" 133413.8 -120082.0
+      (net A7 1)
+      (clearance_class "kicad_default")
+    )
+    (via "Via[0-3]_800:400_um" 143234.9 -115581.1
+      (net DQ0 1)
+      (clearance_class "kicad_default")
+    )
+    (via "Via[0-3]_800:400_um" 130822.8 -116397.1
+      (net DQ0 1)
+      (clearance_class "kicad_default")
+    )
+    (via "Via[0-3]_800:400_um" 127286.5 -117637.3
+      (net DQ0 1)
+      (clearance_class "kicad_default")
+    )
+    (via "Via[0-3]_800:400_um" 165353.4 -115435.0
+      (net DQ5 1)
+      (clearance_class "kicad_default")
+    )
+    (via "Via[0-3]_800:400_um" 140191.7 -118735.6
+      (net DQ2 1)
+      (clearance_class "kicad_default")
+    )
+    (via "Via[0-3]_800:400_um" 134565.3 -119095.3
+      (net DQ1 1)
+      (clearance_class "kicad_default")
+    )
+    (via "Via[0-3]_800:400_um" 135469.3 -117651.2
+      (net CAS 1)
+      (clearance_class "kicad_default")
+    )
+    (via "Via[0-3]_800:400_um" 134330.5 -117229.6
+      (net A3 1)
+      (clearance_class "kicad_default")
+    )
+    (via "Via[0-3]_800:400_um" 132740.4 -118318.0
+      (net A6 1)
+      (clearance_class "kicad_default")
+    )
+    (via "Via[0-3]_800:400_um" 149329.2 -117830.7
+      (net A6 1)
+      (clearance_class "kicad_default")
+    )
+    (via "Via[0-3]_800:400_um" 190725.3 -122104.2
+      (net GND 1)
+      (clearance_class "kicad_default")
+    )
+    (via "Via[0-3]_800:400_um" 181059.3 -115276.1
+      (net A0 1)
+      (clearance_class "kicad_default")
+    )
+    (via "Via[0-3]_800:400_um" 178437.9 -115071.7
+      (net A1 1)
+      (clearance_class "kicad_default")
+    )
+    (via "Via[0-3]_800:400_um" 162207.7 -116248.5
+      (net DQ4 1)
+      (clearance_class "kicad_default")
+    )
+    (via "Via[0-3]_800:400_um" 136692.4 -118622.8
+      (net A8 1)
+      (clearance_class "kicad_default")
+    )
+    (via "Via[0-3]_800:400_um" 157595.2 -121133.9
+      (net A8 1)
+      (clearance_class "kicad_default")
+    )
+    (via "Via[0-3]_800:400_um" 135955.3 -121373.4
+      (net GND 1)
+      (clearance_class "kicad_default")
+    )
+    (via "Via[0-3]_800:400_um" 138180.2 -118077.1
+      (net CAS 1)
+      (clearance_class "kicad_default")
+    )
+    (via "Via[0-3]_800:400_um" 152281.4 -118081.8
+      (net A5 1)
+      (clearance_class "kicad_default")
+    )
+    (via "Via[0-3]_800:400_um" 160665.0 -122072.3
+      (net GND 1)
+      (clearance_class "kicad_default")
+    )
+    (via "Via[0-3]_800:400_um" 188529.5 -122036.8
+      (net CASP 1)
+      (clearance_class "kicad_default")
+    )
+    (via "Via[0-3]_800:400_um" 147354.5 -119495.4
+      (net +5V 1)
+      (clearance_class "kicad_default")
+    )
+    (via "Via[0-3]_800:400_um" 166224.8 -118790.0
+      (net GND 1)
+      (clearance_class "kicad_default")
+    )
+    (wire 
+      (polygon B.Cu 0
+        114300.0 -126999.0
+        203327.0 -126999.0
+        203327.0 -110362.0
+        114300.0 -110362.0
+      )
+      (net GND 1)
+      (clearance_class default)
+    )
+    (wire 
+      (polygon F.Cu 0
+        114300.0 -127000.0
+        203327.0 -127000.0
+        203327.0 -110363.0
+        114300.0 -110363.0
+      )
+      (net "@:no_net_0" 1)
+      (clearance_class default)
+    )
   )
 )
