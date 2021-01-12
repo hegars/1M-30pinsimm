@@ -4,11 +4,11 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
+Title "1MB 8/9 bit 30 Pin SIMM Fast Page Mode DRAM Module"
+Date "2021-01-13"
+Rev "v1.0"
+Comp "hegars.com"
+Comment1 "https://pcb.hegars.com/?sku=1mbfpmsimm"
 Comment2 ""
 Comment3 ""
 Comment4 ""
