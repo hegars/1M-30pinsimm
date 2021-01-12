@@ -283,7 +283,7 @@ F 1 "CP" H 3768 4605 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805_HandSoldering" H 3688 4500 50  0001 C CNN
 F 3 "~" H 3650 4650 50  0001 C CNN
 	1    3650 4650
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:CP C2
@@ -294,7 +294,7 @@ F 1 "CP" H 5368 4605 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805_HandSoldering" H 5288 4500 50  0001 C CNN
 F 3 "~" H 5250 4650 50  0001 C CNN
 	1    5250 4650
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L power:+5V #PWR0109
@@ -368,7 +368,7 @@ F 1 "CP" H 6968 4605 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6888 4500 50  0001 C CNN
 F 3 "~" H 6850 4650 50  0001 C CNN
 	1    6850 4650
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L power:+5V #PWR0111
