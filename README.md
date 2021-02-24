@@ -8,7 +8,7 @@ WORK IN PROGRESS - Dont let your blue smoke out.
 
 ## Real Boards
 
-Board back from JLCPCB
+Boards back from JLCPCB
 ![prod1](images/prod-board1.png)
 
 Seated in test socket fine, aliginmet is great
