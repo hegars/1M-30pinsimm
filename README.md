@@ -13,3 +13,10 @@ Boards back from JLCPCB
 
 Seated in test socket fine, aliginmet is great
 ![prod2](images/prod-board2.png)
+
+
+## Test Chips
+
+Donor 72pin dual sided ram, 99cent ebay find which has enough chips for 8 boards. 
+
+![donor](images/donor.png)
